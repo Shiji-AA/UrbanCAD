@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logoArcite from "../../../assets/logoArcite.png";
+import urbancadLogo from "../../../assets/urbancadLogo.jpg"
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,7 +12,7 @@ function Navbar() {
     <>
       <div className=" bg-black text-white text-end pr-10 pb-3">Login</div>
       <nav className="flex flex-wrap items-center justify-between p-3 bg-white">
-        <img src={logoArcite} className="" alt="ARCITE" width="120" />
+        <img src={urbancadLogo} className="" alt="ARCITE" width="130" height="50"/>
 
         <div className="flex md:hidden">
           <button onClick={toggleMenu}>
@@ -63,7 +63,7 @@ function Navbar() {
               to="/"
               className="block md:inline-block text-black font-semibold hover:text-blue-500 px-3 py-3 border-b-2 border-white-900 md:border-none"
             >
-              Need to become a Franchesee?
+              Need to become a Franchisee?
             </Link>
 
           

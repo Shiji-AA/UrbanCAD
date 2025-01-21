@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 function ContactForm() {
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
+        Name: '',
+        Mobile: '',
         email: ''
     });
 
@@ -33,28 +33,28 @@ function ContactForm() {
                         <form onSubmit={handleSubmit}>
                             <div className="w-full">
                                 <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                                    <span className="text-red-400 mr-1">*</span> First Name
+                                    <span className="text-red-400 mr-1">*</span> Name
                                 </div>
                                 <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
                                     <input
                                         name="firstName"
-                                        placeholder="John"
+                                        placeholder="Type your name here"
                                         className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                                        value={formData.firstName}
+                                        value={formData.Name}
                                         onChange={handleChange}
                                     />
                                 </div>
                             </div>
                             <div className="w-full">
                                 <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
-                                    <span className="text-red-400 mr-1">*</span> Last Name
+                                    <span className="text-red-400 mr-1">*</span> Mobile
                                 </div>
                                 <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
                                     <input
                                         name="lastName"
-                                        placeholder="Doe"
+                                        placeholder="Type Mobile no Here"
                                         className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
-                                        value={formData.lastName}
+                                        value={formData.Mobile}
                                         onChange={handleChange}
                                     />
                                 </div>
@@ -66,7 +66,7 @@ function ContactForm() {
                                 <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">
                                     <input
                                         name="email"
-                                        placeholder="john@doe.com"
+                                        placeholder="Type your Email here"
                                         className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
                                         value={formData.email}
                                         onChange={handleChange}

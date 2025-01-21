@@ -1,5 +1,6 @@
 
 import Cards from '../../Components/Users/Cards/Cards'
+import ContactForm from '../../Components/Users/ContactForm/ContactForm'
 import Footer from '../../Components/Users/Footer/Footer'
 import Hero1 from '../../Components/Users/Hero/Hero1'
 import Home from '../../Components/Users/Home/Home'
@@ -12,6 +13,7 @@ function HomePage() {
             <Home/>
             <Cards/>
             <Hero1/>
+            <ContactForm/>
             <Footer/>         
         </div>
     )
