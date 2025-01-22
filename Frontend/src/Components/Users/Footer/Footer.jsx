@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-200 dark:bg-black">
+      <footer className="bg-gray-300 dark:bg-black">
         <div className="sm:flex sm:items-center sm:justify-center border-t border-gray-300 p-10">
               <span className="text-sm text-gray-900 sm:text-center dark:text-gray-400">
                 © 2025{" "}
