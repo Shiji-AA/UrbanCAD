@@ -8,6 +8,7 @@ import DataScience from './Components/Users/Cources/DataScience'
 import AdminLogin from './Components/Admin/AdminLogin'
 import AdminDashboard from './Components/Admin/AdminDashboard'
 import AdminRegister from './Components/Admin/AdminRegister'
+import AdminEnquiryData from './Components/Admin/AdminEnquiryData'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <Route path="/adminregister" element={<AdminRegister />} /> 
       <Route path="/admin" element={<AdminLogin />} />  
       <Route path="/admindashboard" element={<AdminDashboard />} /> 
+      <Route path="/enquirydata" element={<AdminEnquiryData />} /> 
+      
       </Route>
     </Routes>
   

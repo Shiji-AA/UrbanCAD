@@ -15,6 +15,7 @@ function AdminNavbar() {
   const dispatch = useDispatch();
   const adminUser = useSelector((state) => state.admin.admindata);
 
+
   const handleLogout = () => {
     dispatch(logout());
     navigate("/admin"); // Redirect to login page or admin login page
@@ -65,7 +66,7 @@ function AdminNavbar() {
               Dashboard
             </a>
             <a
-              href="/EnquiryData"
+              href="/enquirydata"
               className="block md:inline-block text-navy hover:text-yellow-400 px-3 py-3 border-b-2 border-transparent md:border-none"
             >
               Enquiry Data

@@ -9,7 +9,6 @@ import { setAdminInfo } from '../../../Redux/Slices/AdminSlice';
 import { axiosInstanceAdmin } from '../../api/axiosInstance';
 
 
-
 export default function Example() {
  
 const[email,setEmail]= useState("")
@@ -25,7 +24,9 @@ const dispatch= useDispatch();
   if(adminUser){
   navigate('/admindashboard');
   }
-  },[])
+  },[adminUser,navigate])
+
+
 
 console.log(adminUser)
 const handleSubmit=(e)=> {
