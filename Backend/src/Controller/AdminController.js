@@ -85,5 +85,46 @@ const adminLogin = async (req, res) => {
     }
 };
 
+const disqualifyUser = async (req, res) => {
+  try {
+    const { id } = req.params; // Extract user ID from request parameters
+    const user = await Enquiry.findById(id); // Fetch the user from the Enquiry collection
 
-export { adminRegister ,adminLogin,enquiryData};
+    if (!user) {
+      console.log("User not found");
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    user.isQualified = false; // Mark the user as disqualified
+    await user.save(); // Save the updated user record
+
+    return res.status(200).json({ message: "User has been successfully disqualified" });
+  } catch (error) {
+    console.error("Error disqualifying user:", error);
+    return res.status(500).json({ message: "An error occurred. Please try again later." });
+  }
+};
+
+// Qualify User Function
+const qualifyUser = async (req, res) => {
+  try {
+    const { id } = req.params; // Extract user ID from request parameters
+    const user = await Enquiry.findById(id); // Fetch the user from the Enquiry collection
+
+    if (!user) {
+      console.log("User not found");
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    user.isQualified = true; // Mark the user as qualified
+    await user.save(); // Save the updated user record
+
+    return res.status(200).json({ message: "User has been successfully qualified" });
+  } catch (error) {
+    console.error("Error qualifying user:", error);
+    return res.status(500).json({ message: "An error occurred. Please try again later." });
+  }
+};
+
+
+export { adminRegister ,adminLogin,enquiryData,disqualifyUser,qualifyUser};

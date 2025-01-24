@@ -1,86 +1,84 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faChalkboardTeacher, faGlobeAmericas, faTools, faHandshake, faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Benefits() {
     return (
-        <div className="bg-white py-10 px-4">
+        <div className="bg-gray-50 py-20 px-6">
             <div className="max-w-screen-xl mx-auto text-center">
                 {/* Heading */}
-                <div className="flex justify-center items-center mb-12">
-                    <h1 className="text-4xl font-semibold text-aqua mr-2">
-                        Experience the
+                <div className="flex flex-col sm:flex-row justify-center items-center mb-16">
+                    <h1 className="text-4xl font-semibold text-aqua mr-2 mb-4 sm:mb-0">
+                        Beyond Education
                     </h1>
                     <h1 className="text-4xl font-semibold text-navy">
-                        CADDvantage
+                        Beyond Boundaries
                     </h1>
                 </div>
 
                 {/* Benefits Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Benefit 1 */}
-                    <div className="bg-gradient-to-r from-blue-500 to-aqua p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
+                    <div className="bg-gradient-to-r from-aqua to-navy p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
                             <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Proven Legacy</h4>
-                            <p className="text-white mt-2">
-                                Backed by 38 years of strength and experience, 
-                                the CADD Centre Group takes pride in a rich history of 
-                                empowering countless learners to achieve their aspirations.
+                            <h4 className="text-white text-xl font-semibold mt-4">A Decade of Excellence</h4>
+                            <p className="text-white mt-3">
+                                10 years of expertise driving quality education. Our brand is recognized as a leader in the field.
                             </p>
                         </div>
                     </div>
 
                     {/* Benefit 2 */}
-                    <div className="bg-gradient-to-r from-green-400 to-blue-500 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
-                            <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Innovative Learning</h4>
-                            <p className="text-white mt-2">
-                                We integrate modern techniques and technologies to ensure our learners stay ahead in their fields.
+                    <div className="bg-gradient-to-r from-teal-500 to-aqua p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faChalkboardTeacher} size="3x" color="#fff" />
+                            <h4 className="text-white text-xl font-semibold mt-4">Cutting-Edge Training</h4>
+                            <p className="text-white mt-3">
+                                Our training incorporates the latest trends and tools, ensuring learners stay ahead in their careers.
                             </p>
                         </div>
                     </div>
 
                     {/* Benefit 3 */}
-                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
-                            <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Expert Trainers</h4>
-                            <p className="text-white mt-2">
-                                Our trainers are industry experts with years of experience, ensuring top-notch guidance for all learners.
+                    <div className="bg-gradient-to-r from-navy to-teal-500 p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faGlobeAmericas} size="3x" color="#fff" />
+                            <h4 className="text-white text-xl font-semibold mt-4">Global Networking</h4>
+                            <p className="text-white mt-3">
+                                Leverage our vast global network, opening doors to international opportunities and collaborations.
                             </p>
                         </div>
                     </div>
 
                     {/* Benefit 4 */}
-                    <div className="bg-gradient-to-r from-orange-400 to-yellow-500 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
-                            <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Global Network</h4>
-                            <p className="text-white mt-2">
-                                With a strong network of partners across the globe, we provide opportunities to grow internationally.
+                    <div className="bg-gradient-to-r from-navy to-aqua p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faTools} size="3x" color="#fff" />
+                            <h4 className="text-white text-xl font-semibold mt-4">Comprehensive Tools</h4>
+                            <p className="text-white mt-3">
+                                Gain access to state-of-the-art tools, ensuring you are equipped with the latest technology in your industry.
                             </p>
                         </div>
                     </div>
 
                     {/* Benefit 5 */}
-                    <div className="bg-gradient-to-r from-red-500 to-yellow-500 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
-                            <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Cutting-Edge Tools</h4>
-                            <p className="text-white mt-2">
-                                We provide access to the latest tools and software to help learners stay competitive in their careers.
+                    <div className="bg-gradient-to-r from-aqua to-navy p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faHandshake} size="3x" color="#fff" />
+                            <h4 className="text-white text-xl font-semibold mt-4">Sustainable Partnerships</h4>
+                            <p className="text-white mt-3">
+                                We foster long-term partnerships with both learners and industry experts, ensuring sustainable success.
                             </p>
                         </div>
                     </div>
 
                     {/* Benefit 6 */}
-                    <div className="bg-gradient-to-r from-teal-500 to-green-500 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
-                        <div className="flex flex-col items-center mb-4">
-                            <FontAwesomeIcon icon={faAward} size="3x" color="#fff" />
-                            <h4 className="text-aqua text-lg font-medium mt-4">Industry Recognition</h4>
-                            <p className="text-white mt-2">
-                                Our programs are recognized by top industry leaders, ensuring credibility and value for your learning.
+                    <div className="bg-gradient-to-r from-teal-500 to-navy p-8 rounded-lg shadow-xl hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faSignInAlt} size="3x" color="#fff" />
+                            <h4 className="text-white text-xl font-semibold mt-4">Easy Entry Opportunities</h4>
+                            <p className="text-white mt-3">
+                                With low entry barriers and industry-recognized programs, we make it easy to enter your chosen career path.
                             </p>
                         </div>
                     </div>

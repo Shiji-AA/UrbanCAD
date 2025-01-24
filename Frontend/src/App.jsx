@@ -1,4 +1,4 @@
-
+import {Toaster} from 'react-hot-toast';
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 import HomePage from './Pages/User/HomePage'
 import Civil from './Components/Users/Cources/Civil'
@@ -13,6 +13,7 @@ import AdminEnquiryData from './Components/Admin/AdminEnquiryData'
 function App() {
   return (
   <Router>
+    <Toaster position="top-right"/>
     <Routes>   
       <Route>
      {/* UserSide   */}  

@@ -27,6 +27,10 @@ const enquirySchema = new mongoose.Schema(
                 'Please enter a valid email address',
             ],
         },
+        isQualified:{
+            type:Boolean,        
+            default:false
+        },
     },
     { timestamps: true }
 );

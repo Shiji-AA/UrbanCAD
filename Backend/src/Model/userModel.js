@@ -30,10 +30,7 @@ const userSchema = new mongoose.Schema({
         type:Boolean,        
         default:false
     },
-    isQualified:{
-        type:Boolean,        
-        default:false
-    }
+  
    
 }, {
     timestamps: true
