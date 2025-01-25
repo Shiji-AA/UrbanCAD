@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {    
+    extend: {  
+      fontFamily: {
+        body: ['Roboto', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },  
       
       colors: {
         navy: "#001f3f",

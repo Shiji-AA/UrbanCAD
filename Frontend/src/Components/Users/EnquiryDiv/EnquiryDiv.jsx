@@ -3,8 +3,8 @@ function EnquiryDiv({ bgColor = 'bg-navy', textColor = 'text-white', buttonBgCol
         <>
             <div className={`${bgColor} ${textColor} py-10 px-4 flex ${justifyContent} items-center`}>
                 <div>
-                    <h1 className="text-3xl font-semibold">Ready to make an Impact?</h1>
-                    <p className="text-lg mt-2">Join the CADD Centre family and lead the way in skill training.</p>
+                    <h1 className="text-3xl font-semibold">Let's make a Difference?</h1>
+                   
                 </div>
                 <a
                   href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services."

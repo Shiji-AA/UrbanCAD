@@ -6,81 +6,86 @@ function Benefits() {
         <div className="bg-gray-50 py-20 px-6">
             <div className="max-w-screen-xl mx-auto text-center">
                 {/* Heading */}
-                <div className="flex flex-col sm:flex-row justify-center items-center mb-16">
-                    <h1 className="text-4xl font-semibold text-aqua mr-2 mb-4 sm:mb-0">
-                        Beyond Education
-                    </h1>
-                    <h1 className="text-4xl font-semibold text-gray-900">
-                        Beyond Boundaries
-                    </h1>
-                </div>
+                <h2 className="text-4xl font-semibold text-gray-800 mb-12">Why Choose Us?</h2>
 
                 {/* Benefits Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* Benefit 1 */}
-                    <div className="bg-white border  border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faAward} size="3x" className="text-aqua" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">A Decade of Excellence</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                10 years of expertise driving quality education. Our brand is recognized as a leader in the field.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faAward} size="4x" className="text-teal-500 group-hover:text-teal-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">A Decade of Excellence</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                10 years of expertise in delivering high-quality education. We're recognized as leaders in the field.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
 
                     {/* Benefit 2 */}
-                    <div className="bg-white border border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faChalkboardTeacher} size="3x" className="text-teal-500" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">Cutting-Edge Training</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                Our training incorporates the latest trends and tools, ensuring learners stay ahead in their careers.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faChalkboardTeacher} size="4x" className="text-indigo-500 group-hover:text-indigo-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">Cutting-Edge Training</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                Stay ahead in your career with our up-to-date training, incorporating the latest trends and tools.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
 
                     {/* Benefit 3 */}
-                    <div className="bg-white border border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faGlobeAmericas} size="3x" className="text-blue-500" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">Global Networking</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                Leverage our vast global network, opening doors to international opportunities and collaborations.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faGlobeAmericas} size="4x" className="text-blue-500 group-hover:text-blue-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">Global Networking</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                Leverage a vast network of professionals and expand your opportunities worldwide.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
 
                     {/* Benefit 4 */}
-                    <div className="bg-white border border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faTools} size="3x" className="text-indigo-500" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">Comprehensive Tools</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                Gain access to state-of-the-art tools, ensuring you are equipped with the latest technology in your industry.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faTools} size="4x" className="text-green-500 group-hover:text-green-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">Comprehensive Tools</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                Access the latest tools and technologies to excel in your field.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
 
                     {/* Benefit 5 */}
-                    <div className="bg-white border border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faHandshake} size="3x" className="text-purple-500" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">Sustainable Partnerships</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                We foster long-term partnerships with both learners and industry experts, ensuring sustainable success.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faHandshake} size="4x" className="text-purple-500 group-hover:text-purple-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">Sustainable Partnerships</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                Foster long-term partnerships with experts and industry leaders.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
 
                     {/* Benefit 6 */}
-                    <div className="bg-white border border-gray-300 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                        <div className="flex flex-col items-center">
-                            <FontAwesomeIcon icon={faSignInAlt} size="3x" className="text-pink-500" />
-                            <h4 className="text-gray-800 text-xl font-semibold mt-4">Easy Entry Opportunities</h4>
-                            <p className="text-gray-600 mt-3 text-sm">
-                                With low entry barriers and industry-recognized programs, we make it easy to enter your chosen career path.
+                    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div className="flex flex-col items-center mb-6">
+                            <FontAwesomeIcon icon={faSignInAlt} size="4x" className="text-pink-500 group-hover:text-pink-700 transition-colors duration-300" />
+                            <h4 className="text-xl font-semibold text-gray-800 mt-6">Easy Entry Opportunities</h4>
+                            <p className="text-gray-600 mt-4 text-sm">
+                                Low entry barriers and recognized programs to easily step into your career.
                             </p>
                         </div>
+                        {/* Gradient Outline */}
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#00FFFF] via-[#000080] to-[#00FFFF] opacity-40 z-[-1]"></div>
                     </div>
                 </div>
             </div>

@@ -63,8 +63,7 @@ function ContactForm() {
                 <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0">
                     <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Revolutionize Education</h1>
                     <h2 className="text-xl md:text-2xl font-medium text-white mb-6">Start your journey with UrbanCAD!</h2>
-                    <p className="text-white text-lg">We're excited to hear from you. Fill out the form below to get started!</p>
-                </div>
+                                   </div>
 
                 <div className="md:w-1/2 w-full bg-white p-8 shadow-2xl rounded-lg">
                     <form onSubmit={formik.handleSubmit}>
