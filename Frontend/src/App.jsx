@@ -9,6 +9,7 @@ import AdminLogin from './Components/Admin/AdminLogin'
 import AdminDashboard from './Components/Admin/AdminDashboard'
 import AdminRegister from './Components/Admin/AdminRegister'
 import AdminEnquiryData from './Components/Admin/AdminEnquiryData'
+import AboutUs from './Components/Users/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <Route path="/electrical" element={<Electrical/>}/>
       <Route path="/mechanical" element={<Mechanical/>} />
       <Route path="/datascience" element={<DataScience/>}/>
+      <Route path="/aboutus" element={<AboutUs/>}/>
+     
     {/* AdminSide   */}  
       <Route path="/adminregister" element={<AdminRegister />} /> 
       <Route path="/admin" element={<AdminLogin />} />  

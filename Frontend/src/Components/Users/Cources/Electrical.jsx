@@ -5,7 +5,7 @@ import ccseImage from "../../../assets/civil/civil1.jpg";
 import constructionTechnologyImage from "../../../assets/civil/civil2.jpg";
 import architecturalBIMImage from "../../../assets/civil/civil3.jpg";
 
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer1";
 import Hero3 from "../Hero/Hero3";
 import Navbar from "../Navbar/Navbar";
 

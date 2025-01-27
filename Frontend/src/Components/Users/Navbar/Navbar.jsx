@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import urbancadLogo from "../../../assets/URBANCAD_LOGO2.png";
+import Toolbar from "./Toolbar";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,9 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md">
+<>
+<Toolbar/>
+<nav className="flex items-center justify-between p-3 bg-white shadow-md">
       {/* Logo */}
       <img
         src={urbancadLogo}
@@ -88,7 +91,7 @@ function Navbar() {
 
             {/* Dropdown menu */}
             {dropdownOpen && (
-              <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-52 border border-aqua">
+              <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-52 border border-aqua z-50">
                 <Link
                   to="/civil"
                   className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
@@ -118,14 +121,15 @@ function Navbar() {
           </div>
 
           <Link
-            to="/"
+            to="/aboutus"
             className="text-navy font-semibold hover:text-aqua px-3 py-3 border-b-2 border-transparent hover:border-aqua md:border-none"
           >
-            Franchise
+            AboutUs
           </Link>
         </div>
       </div>
     </nav>
+</>
   );
 }
 

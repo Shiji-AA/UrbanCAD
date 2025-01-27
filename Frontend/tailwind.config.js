@@ -10,10 +10,11 @@ export default {
         body: ['Roboto', 'sans-serif'],
         heading: ['Poppins', 'sans-serif'],
       },  
-      
+    
       colors: {
         navy: "#001f3f",
-        aqua: "#7fdbff", 
+        // aqua: "#7fdbff", 
+        aqua:"#14b8a6",
       },
     },
   },

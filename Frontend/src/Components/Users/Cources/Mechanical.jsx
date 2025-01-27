@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ccseImage from "../../../assets/civil/civil1.jpg";
 import constructionTechnologyImage from "../../../assets/civil/civil2.jpg";
 import architecturalBIMImage from "../../../assets/civil/civil3.jpg";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer1";
 import Hero4 from "../Hero/Hero4";
 import Navbar from "../Navbar/Navbar";
 

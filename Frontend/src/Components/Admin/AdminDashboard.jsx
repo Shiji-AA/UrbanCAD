@@ -1,4 +1,4 @@
-import Footer from "../Users/Footer/Footer";
+import Footer from "../Users/Footer/Footer1";
 import AdminNavbar from "./AdminNavbar";
 import { FaBriefcase, FaUserTie, FaUserFriends, FaCheckCircle } from "react-icons/fa";
 
