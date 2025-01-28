@@ -68,7 +68,7 @@ function ContactForm() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="font-heading max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-center items-center">
+      <div className=" font-heading max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-center items-center">
         <div className="text-center md:text-center md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold text-navy mb-4 leading-tight">
             Revolutionize <span className='text-aqua pl-3'>Education</span> 
@@ -78,7 +78,7 @@ function ContactForm() {
           </h2>
         </div>
 
-        <div className="md:w-1/2 w-full bg-white p-8 shadow-2xl rounded-lg">
+        <div className="md:w-1/2 w-full bg-white p-8 shadow-2xl rounded-lg border-2">
           <form onSubmit={formik.handleSubmit}>
             <div className="w-full mb-6">
               <label className="font-bold text-gray-800 text-sm leading-8 uppercase">

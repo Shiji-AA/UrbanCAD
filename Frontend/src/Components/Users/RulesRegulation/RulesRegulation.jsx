@@ -1,92 +1,79 @@
+
+import { FaCheckCircle } from "react-icons/fa";  // Importing checkmark icon
+import image4 from "../../../assets/certificates/image4.jpeg";
+
 function RulesRegulation() {
   return (
-    <>
-      {/* Background Section with Opacity on Image */}
-      <div
-        className="relative w-full bg-cover bg-center py-22 pt-10"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)",
-        }}
-      >
-        {/* Background Image Opacity using Pseudo-element */}
-        <div className="absolute inset-0 bg-black opacity-60"></div>{" "}
-        {/* Only the background image will have opacity */}
-        {/* Heading Inside the Background */}
-        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500 text-center mb-8 relative z-10">
-  Step into success with an UrbanCAD franchise today
-</h1>
+    <div className="flex flex-wrap w-full p-20">
+      {/* First Div: Image */}
+      <div className="w-full md:w-1/2 pl-10 mb-8 md:mb-0">
+        <img
+          src={image4}
+          alt="Certificate Image"
+          className="w-full h-auto rounded-2xl shadow-md"  // Adjust image size
+        />
+      </div>
 
-        {/* Parent Div for Two Columns */}
-        <div className="container mx-auto px-12 py-10 relative z-10">
-          <div className="flex flex-col md:flex-row md:justify-between md:gap-12 space-y-8 md:space-y-0">
-            {/* Left Div */}
-            <div className="bg-aqua rounded-lg p-6 md:w-1/2 shadow-md hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
-              <h2 className="text-2xl font-semibold mb-4">
-                {" "}
-                Requirement and support for UrbanCAD
+      {/* Second Div: Requirements and Support */}
+      <div className="w-full md:w-1/2 p-4">
+        <div className="rounded-lg p-6 ">
+          <h6 className="font-heading text-xl font-semibold  text-aqua mb-4">
+          UNLOCK THE POTENTIAL OF URBANCAD FRANCHISE
+          </h6>
+          <h2 className="font-heading text-4xl font-semibold text-navy mb-6">
+          Step into success with an UrbanCAD franchise today
+          </h2>
+          <p className="font-body text-base text-gray-600 mb-6 leading-relaxed text-lg">
+          Joining the UrbanCAD franchise offers a unique opportunity in a growing industry, with proven business models and strong support. As a franchisee, you'll receive training, marketing, and operational assistance to ensure success, along with the resources to grow and maximize your returns.
+</p>
+
+          {/* List of Requirements */}
+          <div className="space-y-8">
+            <div className="flex items-start space-x-4 border-b border-gray-300">
+              <div className="flex items-center justify-center  rounded-full border-2 border-aqua">
+                <FaCheckCircle className="text-navy text-4xl" />
+              </div>
+              <h2 className="font-body font-bold text-lg text-gray-800">
+                Need 600-800 sq ft of commercial property for operations
               </h2>
-              <ul className="space-y-2 text-lg">
-              <li className="flex items-start">
-  <span className="text-yellow-500 mr-2 ">▶</span>
-  600-800 sq ft of commercial property
-</li>
-                <li className="flex items-start">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Ongoing training, marketing and sales support from Central
-                  Team
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Return of Investment between 70 to 90% depending on
-                  operational efficiency
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Joint Venture Opportunity after completing one year
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Recover your investments in 12 to 18 months
-                </li>
-              </ul>
             </div>
-
-            {/* Right Div */}
-            <div className=" rounded-lg pt-2 md:w-1/2 shadow-md hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
-              <h2 className="text-aqua text-3xl font-semibold mb-4">
-                {" "}
-                Support & Resources
+            
+            <div className="flex items-start space-x-4 border-b border-gray-300">
+              <div className="flex items-center justify-center rounded-full border-2 border-aqua">
+                <FaCheckCircle className="text-navy text-4xl" />
+              </div>
+              <h2 className="font-body font-bold text-lg text-gray-800">
+                Ongoing training, marketing, and sales support provided by the central team
               </h2>
-
-              <ul className="space-y-2 text-lg">
-                <li className="flex items-start text-aqua">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Comprehensive Franchise Training
-                </li>
-                <li className="flex items-start text-aqua">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Branding and Design
-                </li>
-                <li className="flex items-start text-aqua">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Technological Infrastructure
-                </li>
-                <li className="flex items-start text-aqua">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Ongoing Educational Content Updates
-                </li>
-
-                <li className="flex items-start text-aqua">
-                  <span className="text-yellow-500 mr-2">▶</span>
-                  Technical and Administrative Support
-                </li>
-              </ul>
+            </div>
+            <div className="flex items-start space-x-4 border-b border-gray-300">
+              <div className="flex items-center justify-center  rounded-full border-2 border-aqua">
+                <FaCheckCircle className="text-navy text-4xl" />
+              </div>
+              <h2 className=" font-bold font-body text-lg text-gray-800">
+                Potential Return On Investment between 70-90%, depending on operational efficiency
+              </h2>
+            </div>
+            <div className="flex items-start space-x-4 border-b border-gray-300">
+              <div className="flex items-center justify-center  rounded-full border-2 border-aqua">
+                <FaCheckCircle className="text-navy text-4xl" />
+              </div>
+              <h2 className=" font-bold font-body text-lg text-gray-800">
+                Option for a joint venture after completing one year of operation
+              </h2>
+            </div>
+            <div className="flex items-start space-x-4 border-b border-gray-300">
+              <div className="flex items-center justify-center rounded-full border-2 border-aqua">
+                <FaCheckCircle className="text-navy text-4xl" />
+              </div>
+              <h2 className=" font-bold font-body text-lg text-gray-800">
+                Investment recovery possible within 12-18 months
+              </h2>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

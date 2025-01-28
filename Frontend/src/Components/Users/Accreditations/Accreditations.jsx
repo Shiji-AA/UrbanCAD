@@ -6,7 +6,7 @@ import lightpink from '../../../assets/certificates/lightpinkbg1.avif';
 function Accreditations() {
   return (
     <div
-      className="font-heading bg-gradient-to-r from-red-100 via-gray-100 to-gray-200 p-8 md:p-16 text-white min-h-screen flex flex-col justify-center items-center"
+      className="font-heading bg-gradient-to-r from-red-100 via-gray-100 to-gray-200 p-10 md:p-16 text-white  flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${lightpink})`,
         backgroundSize: 'cover',
@@ -58,7 +58,7 @@ function Accreditations() {
 
 
       {/* Button */}
-      <button className="font-body bg-gradient-to-r from-aqua to-blue-500 text-white py-3 px-10 rounded-full hover:from-blue-500 hover:to-aqua transition duration-300 mt-8 text-2xl">
+      <button className="font-body bg-gradient-to-r from-aqua to-navy text-white py-3 px-10 rounded-full hover:from-navy hover:to-aqua transition duration-300 mt-8 text-2xl">
         Contact Us
       </button>
     </div>

@@ -4,7 +4,7 @@ import image3 from '../../../assets/certificates/image3.jpeg';
 
 function OurGoals() {
   return (
-    <div className="flex flex-col md:flex-row w-full bg-gray-100 pt-20 px-4">
+    <div className="flex flex-col md:flex-row w-full bg-gray-100 pt-20  pb-20 px-0">
       {/* Left Column: Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center relative">
         {/* Image 1 */}
@@ -28,25 +28,25 @@ function OurGoals() {
       </div>
 
       {/* Right Column: Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-6">
-        <h2 className="text-3xl font-bold text-navy mb-4">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 pl-20 ">
+        <h2 className=" font-heading text-3xl font-bold text-aqua mb-4">
           Educational Empowerment
         </h2>
-        <ul className="list-disc ml-5 text-gray-800 mb-8">
-          <li>Breaking barriers to skill acquisition</li>
-          <li>Providing accessible, affordable learning paths</li>
-          <li>Bridging industry skill gaps</li>
-          <li>Democratizing professional development</li>
+        <ul className="font-body list-disc ml-5 text-gray-800  text-lg mb-8">
+          <li>Breaking barriers to skill acquisition</li><hr/>
+          <li>Providing accessible, affordable learning paths</li><hr/>
+          <li>Bridging industry skill gaps</li><hr/>
+          <li>Democratizing professional development</li><hr/>
         </ul>
 
-        <h2 className="text-3xl font-bold text-navy mb-4">
+        <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
           Entrepreneurial Enablement
         </h2>
-        <ul className="list-disc ml-5 text-gray-800">
-          <li>Low-investment franchise model</li>
-          <li>Turnkey business opportunity</li>
-          <li>Support for aspiring education entrepreneurs</li>
-          <li>Pathway to create meaningful local impact</li>
+        <ul className="font-body list-disc ml-5 text-gray-800 text-lg ">
+          <li>Low-investment franchise model</li><hr/>
+          <li>Turnkey business opportunity</li><hr/>
+          <li>Support for aspiring education entrepreneurs</li><hr/>
+          <li>Pathway to create meaningful local impact</li><hr/>
         </ul>
       </div>
     </div>

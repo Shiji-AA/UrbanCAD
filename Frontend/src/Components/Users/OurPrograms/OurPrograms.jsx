@@ -1,10 +1,15 @@
 import { useState } from 'react';
+import bluegray3 from '../../../assets/certificates/bluegray3.jpg';
 
 function OurPrograms() {
-  const [openCategory, setOpenCategory] = useState(null);
+  const [expandedCategories, setExpandedCategories] = useState([]);
 
   const toggleCategory = (index) => {
-    setOpenCategory(openCategory === index ? null : index);
+    if (expandedCategories.includes(index)) {
+      setExpandedCategories(expandedCategories.filter(item => item !== index));
+    } else {
+      setExpandedCategories([...expandedCategories, index]);
+    }
   };
 
   const categories = [
@@ -27,60 +32,74 @@ function OurPrograms() {
     {
       title: 'Information Technology',
       programs: [
-        'Program 1', 'Program 2', 'Program 3' // Replace with actual IT programs
+        'Program 1', 'Program 2', 'Program 3'
       ]
     },
     {
       title: 'Project Management',
       programs: [
-        'Program 1', 'Program 2', 'Program 3' // Replace with actual Project Management programs
+        'Program 1', 'Program 2', 'Program 3'
       ]
     }
   ];
 
   return (
-    <div className="bg-gray-50 py-12 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div
+      className="bg-gray-50 py-12 px-6"
+      style={{
+        backgroundImage: `url(${bluegray3})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="max-w-6xl mx-auto bg-white bg-opacity-70 p-8 rounded-lg">
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className=" font-heading text-center mb-12">
           <h1 className="text-4xl font-bold text-navy mb-2">Explore</h1>
           <h2 className="text-4xl font-bold text-aqua">Our Programs</h2>
         </div>
 
-        {/* Two-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Full-Width Accordion */}
+        <div className="space-y-4">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden"
             >
               {/* Card Header */}
               <div
-                className="bg-gradient-to-r from-blue-500 to-teal-400 text-white p-5 cursor-pointer flex justify-between items-center"
+                className="bg-gray-300 p-5 cursor-pointer flex justify-between items-center"
                 onClick={() => toggleCategory(index)}
               >
-                <h2 className="text-xl font-semibold">{category.title}</h2>
-                <span className="text-2xl">
-                  {openCategory === index ? '-' : '+'}
+                <h2 className="font-heading text-xl font-semibold flex-1">{category.title}</h2>
+                <span className="text-2xl border border-gray-900 w-6 h-6 rounded-full pb-1 flex items-center justify-center">
+                  {expandedCategories.includes(index) ? '-' : '+'}
                 </span>
               </div>
 
               {/* Programs List (Collapsible) */}
-              {openCategory === index && (
-                <div className="p-5">
-                  <ul className="space-y-3">
-                    {category.programs.map((program, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-center text-gray-800 text-sm hover:text-teal-500 transition-all duration-200"
-                      >
-                        <span className="text-teal-400 mr-2">▶</span>
-                        {program}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedCategories.includes(index) ? 'h-auto' : 'h-0'}`}
+                style={{
+                  transitionProperty: 'height',
+                }}
+              >
+                {expandedCategories.includes(index) && (
+                  <div className="p-5">
+                    <ul className="space-y-3">
+                      {category.programs.map((program, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-center text-gray-800 text-sm hover:text-teal-500 transition-all duration-200"
+                        >
+                          <span className="text-teal-400 mr-2">▶</span>
+                          {program}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
