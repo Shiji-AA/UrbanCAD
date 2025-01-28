@@ -4,7 +4,8 @@ import image4 from "../../../assets/certificates/image4.jpeg";
 
 function RulesRegulation() {
   return (
-    <div className="flex flex-wrap w-full p-20">
+    <div data-aos="fade-up"
+     className="flex flex-wrap w-full p-20">
       {/* First Div: Image */}
       <div className="w-full md:w-1/2 pl-10 mb-8 md:mb-0">
         <img

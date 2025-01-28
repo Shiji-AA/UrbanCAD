@@ -21,14 +21,15 @@ export default function Home() {
 
   return (
     <>
-     <div className="relative bg-navy flex flex-col lg:flex-row items-center justify-center py-12 px-4 md:px-8">
+     <div  className="relative bg-navy flex flex-col lg:flex-row items-center justify-center py-12 px-4 md:px-8">
       {/* Left Section */}
       <div className="flex flex-col items-start justify-start h-full w-full lg:w-[48%] bg-gray-800 bg-opacity-20 p-6 md:p-8 lg:p-12 space-y-6">
         <div className="text-left space-y-4">
           {/* Main Headings */}
-          <h1 className="font-heading pb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-aqua text-3xl md:text-4xl lg:text-5xl font-bold leading-tight hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+          <h1 className=" pb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-aqua text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
             Build Your Legacy!
           </h1>
+          
 
           <h3
             className="font-body text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500 text-lg md:text-xl lg:text-2xl font-medium leading-relaxed hover:text-blue-500 transform transition-all duration-500 hover:scale-110 hover:translate-y-2"
@@ -40,10 +41,10 @@ export default function Home() {
           </h3>
 
           {/* Features Section */}
-          <div className="flex flex-col sm:flex-row justify-between items-center sm:space-x-6 lg:space-x-8 border-t-2 border-aqua pt-8 pb-6 space-y-6 sm:space-y-0">
+          <div  className="flex flex-col sm:flex-row justify-between items-center sm:space-x-6 lg:space-x-8 border-t-2 border-aqua pt-8 pb-6 space-y-6 sm:space-y-0">
             {/* Feature 1 */}
-            <div className="flex items-center text-left space-x-4">
-              <FontAwesomeIcon icon={faAward} size="2x" color="aqua" />
+            <div data-aos="fade-up" className="flex items-center text-left space-x-4">
+              <FontAwesomeIcon icon={faAward} size="3x" color="aqua" />
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">
                   {count}+
@@ -55,8 +56,8 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex items-center text-left space-x-4">
-              <FontAwesomeIcon icon={faUserGraduate} size="2x" color="aqua" />
+            <div  data-aos="fade-up" className="flex items-center text-left space-x-4">
+              <FontAwesomeIcon icon={faUserGraduate} size="3x" color="aqua" />
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">
                   {count}+
@@ -68,14 +69,14 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex items-center text-left space-x-4">
-              <FontAwesomeIcon icon={faBookOpen} size="2x" color="aqua" />
+            <div data-aos="fade-up" className="flex items-center text-left space-x-4">
+              <FontAwesomeIcon icon={faBookOpen} size="3x" color="aqua" />
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">
                   {count}+
                 </div>
                 <p className="text-white font-body text-sm md:text-base font-medium mt-1">
-                  Industry Aligned Courses
+                  Industrial Courses
                 </p>
               </div>
             </div>

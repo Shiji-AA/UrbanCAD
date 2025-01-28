@@ -4,7 +4,7 @@ import image3 from '../../../assets/certificates/image3.jpeg';
 
 function OurGoals() {
   return (
-    <div className="flex flex-col md:flex-row w-full bg-gray-100 pt-20  pb-20 px-0">
+    <div data-aos="fade-up" className="flex flex-col md:flex-row w-full bg-gray-100 pt-20  pb-20 px-0">
       {/* Left Column: Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center relative">
         {/* Image 1 */}

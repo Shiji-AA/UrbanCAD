@@ -3,7 +3,7 @@ import { faAward, faChalkboardTeacher, faTools, faHandshake } from "@fortawesome
 
 function Benefits() {
   return (
-    <div className="w-full bg-gray-50 flex flex-wrap">
+    <div data-aos="fade-up" className="w-full bg-gray-50 flex flex-wrap">
       {/* First half with heading and paragraph */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-16 px-8 bg-gray-50">
         <h1 className="pb-10 font-heading text-3xl md:text-4xl font-bold text-aqua mb-4">

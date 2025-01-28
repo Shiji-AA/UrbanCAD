@@ -37,7 +37,8 @@ function Footer1() {
             backgroundPosition: 'center',
           }}
         >
-          <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-6">
+          <div data-aos="fade-up"
+          className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-6">
             <div className="flex flex-col md:flex-row justify-between gap-8">
               {/* First half */}
               <div className="flex-1">
@@ -165,7 +166,7 @@ function Footer1() {
               </div>
             </div>
 
-            <div className=" font-body relative sm:flex sm:items-center sm:justify-between border-t border-gray-700 pt-6 mt-6">
+            <div className=" font-body relative sm:flex sm:items-center sm:justify-between border-t border-gray-700 pt-1 mt-2">
               <span className="font-body text-lg text-gray-900 sm:text-center">
                 © 2025{" "}
                 <a href="">

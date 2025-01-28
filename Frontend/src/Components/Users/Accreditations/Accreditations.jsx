@@ -5,7 +5,7 @@ import lightpink from '../../../assets/certificates/lightpinkbg1.avif';
 
 function Accreditations() {
   return (
-    <div
+    <div data-aos="fade-up"
       className="font-heading bg-gradient-to-r from-red-100 via-gray-100 to-gray-200 p-10 md:p-16 text-white  flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${lightpink})`,
@@ -58,9 +58,15 @@ function Accreditations() {
 
 
       {/* Button */}
+      <a href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services." target='_blank' rel='noopener noreferrer'>
       <button className="font-body bg-gradient-to-r from-aqua to-navy text-white py-3 px-10 rounded-full hover:from-navy hover:to-aqua transition duration-300 mt-8 text-2xl">
         Contact Us
       </button>
+
+      </a>
+    
+
+      
     </div>
   );
 }

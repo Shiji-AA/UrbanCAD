@@ -59,7 +59,7 @@ function ContactForm() {
   });
 
   return (
-    <div
+    <div data-aos="fade-up"
       className="py-10 px-4"
       style={{
         backgroundImage: `url(${bluegray})`,
@@ -78,7 +78,9 @@ function ContactForm() {
           </h2>
         </div>
 
-        <div className="md:w-1/2 w-full bg-white p-8 shadow-2xl rounded-lg border-2">
+        <div data-aos="zoom-in" // Zoom-in effect for image
+            data-aos-duration="1000"
+        className="md:w-1/2 w-full bg-white p-8 shadow-2xl rounded-lg border-2">
           <form onSubmit={formik.handleSubmit}>
             <div className="w-full mb-6">
               <label className="font-bold text-gray-800 text-sm leading-8 uppercase">

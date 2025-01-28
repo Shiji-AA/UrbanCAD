@@ -44,7 +44,7 @@ function OurPrograms() {
   ];
 
   return (
-    <div
+    <div data-aos="fade-up"
       className="bg-gray-50 py-12 px-6"
       style={{
         backgroundImage: `url(${bluegray3})`,
@@ -54,25 +54,26 @@ function OurPrograms() {
     >
       <div className="max-w-6xl mx-auto bg-white bg-opacity-70 p-8 rounded-lg">
         {/* Heading */}
-        <div className=" font-heading text-center mb-12">
+        <div className="font-heading text-center mb-12">
           <h1 className="text-4xl font-bold text-navy mb-2">Explore</h1>
           <h2 className="text-4xl font-bold text-aqua">Our Programs</h2>
         </div>
 
         {/* Full-Width Accordion */}
-        <div className="space-y-4">
+        <div data-aos="fade-left"
+        className="space-y-4">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden"
+              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden hover:bg-navy hover:text-white transition-all duration-300"
             >
               {/* Card Header */}
               <div
-                className="bg-gray-300 p-5 cursor-pointer flex justify-between items-center"
+                className="bg-gray-300 p-5 cursor-pointer flex justify-between items-center hover:bg-navy hover:text-white"
                 onClick={() => toggleCategory(index)}
               >
                 <h2 className="font-heading text-xl font-semibold flex-1">{category.title}</h2>
-                <span className="text-2xl border border-gray-900 w-6 h-6 rounded-full pb-1 flex items-center justify-center">
+                <span className=" font-bold text-3xl border border-gray-900 w-6 h-6 rounded-full pb-2 flex items-center justify-center">
                   {expandedCategories.includes(index) ? '-' : '+'}
                 </span>
               </div>

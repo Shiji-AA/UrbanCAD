@@ -10,7 +10,9 @@ export default {
         body: ['Roboto', 'sans-serif'],
         heading: ['Poppins', 'sans-serif'],
       },  
-    
+      fontWeight: {
+        extrabold: 800, 
+      },
       colors: {
         navy: "#001f3f",
         // aqua: "#7fdbff", 
