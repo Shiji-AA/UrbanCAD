@@ -37,7 +37,7 @@ export default function Home() {
               textShadow: "0 0 5px white, 0 0 10px blue, 0 0 15px blue",
             }}
           >
-            Empowering Education, Enabling Entrepreneurship!!
+            Empowering Education <br/>Enabling Entrepreneurship !!
           </h3>
 
           {/* Features Section */}
