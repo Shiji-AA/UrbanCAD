@@ -65,7 +65,7 @@ function OurPrograms() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden hover:bg-navy hover:text-white transition-all duration-300"
+              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden hover:bg-white hover:text-white transition-all duration-300"
             >
               {/* Card Header */}
               <div
@@ -91,7 +91,7 @@ function OurPrograms() {
                       {category.programs.map((program, idx) => (
                         <li
                           key={idx}
-                          className="flex items-center text-gray-800 text-sm hover:text-teal-500 transition-all duration-200"
+                          className="flex items-center text-gray-800 text-sm hover:text-teal-500   transition-all duration-200"
                         >
                           <span className="text-teal-400 mr-2">▶</span>
                           {program}

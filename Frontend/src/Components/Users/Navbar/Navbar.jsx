@@ -106,13 +106,13 @@ function Navbar() {
                   >
                     Electrical Engineering
                   </Link>
-                  <Link
+                  {/* <Link
                     to="/datascience"
                     className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
                   >
                     Data Science
-                  </Link>
-                </div>
+                  </Link> */}
+                </div>  
               )}
             </div>
 
