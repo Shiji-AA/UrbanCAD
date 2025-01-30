@@ -44,7 +44,8 @@ function Electrical() {
     <>
     <Navbar/>
     <Hero3/>
-    <div className="bg-white py-24 px-6 flex justify-center">
+    <div data-aos="fade-up" 
+     className="bg-white py-24 px-6 flex justify-center">
         <div className="max-w-6xl w-full">
         
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

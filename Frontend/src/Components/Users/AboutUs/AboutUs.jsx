@@ -2,6 +2,7 @@ import Footer1 from "../Footer/Footer1";
 import Navbar from "../Navbar/Navbar";
 import vision from '../../../assets/certificates/vision2.png';
 import mission from '../../../assets/certificates/mission.jpg';
+import heroimage3 from '../../../assets/heroimage3.jpg'
 
 
 function AboutUs() {
@@ -10,36 +11,32 @@ function AboutUs() {
             <Navbar />
 
             {/* Hero Section */}
-            <div className="text-navy py-10 bg-gradient-to-r from-blue-50 via-teal-100 to-navy-500">
-                <div className="max-w-screen-xl mx-auto text-center px-6">
-                    <h2 className="font-heading text-4xl font-extrabold mb-6">
-                        <span
-                            className="bg-clip-text text-transparent bg-gradient-to-r from-aqua to-navy animate-fade-left"
-                            style={{ animationDelay: "400ms" }}
-                        >
-                            {`DREAM. `}
-                        </span>
-                        <span
-                            className="bg-clip-text text-transparent bg-gradient-to-r from-aqua to-navy animate-fade-left"
-                            style={{ animationDelay: "800ms" }}
-                        >
-                            {`ACHIEVE. `}
-                        </span>
-                        <span
-                            className="bg-clip-text text-transparent bg-gradient-to-r from-aqua to-navy animate-fade-left"
-                            style={{ animationDelay: "1200ms" }}
-                        >
-                            {`LEAD`}
-                        </span>
-                    </h2>
-                    <p data-aos="zoom-in"
-                        className="font-body text-xl font-bold max-w-3xl mx-auto opacity-0 animate-fade-in"
-                        style={{ animationDelay: "800ms", backgroundImage: "linear-gradient(to right, #00bcd4, #001f3d)", WebkitBackgroundClip: "text", color: "transparent" }}
-                    >
-                        Inspiring minds, transforming lives, and building a future driven by knowledge and innovation.
-                    </p>
-                </div>
-            </div>
+         {/* Hero Section */}
+<div className="relative text-navy py-10 bg-cover bg-center bg-no-repeat" 
+    style={{ backgroundImage: `url(${heroimage3})` }}>
+    <div className="max-w-screen-xl mx-auto text-center px-6 py-16 rounded-lg">
+        <h2 className="font-heading text-4xl font-extrabold mb-6 text-white">
+            <span className="bg-clip-text text-transparent bg-white  animate-fade-left"
+                style={{ animationDelay: "400ms" }}>
+                {`DREAM. `}
+            </span>
+            <span className="bg-clip-text text-transparent bg-white animate-fade-left"
+                style={{ animationDelay: "800ms" }}>
+                {`ACHIEVE. `}
+            </span>
+            <span className="bg-clip-text text-transparent bg-white animate-fade-left"
+                style={{ animationDelay: "1200ms" }}>
+                {`LEAD`}
+            </span>
+        </h2>
+        <p data-aos="zoom-in"
+            className="font-body text-xl font-bold max-w-3xl mx-auto opacity-0 animate-fade-in text-white"
+            style={{ animationDelay: "800ms" }}>
+            Inspiring minds, transforming lives, and building a future driven by knowledge and innovation.
+        </p>
+    </div>
+</div>
+
 
             {/* Content Section */}
             <div data-aos="fade-up" className="bg-blue-50 px-6 py-12 shadow-lg rounded-lg">

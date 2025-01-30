@@ -26,10 +26,7 @@ function HomePage() {
             <RulesRegulation/>
             <Accreditations/>
             <EnquiryDiv bgColor="bg-navy" textColor="text-white" buttonBgColor="bg-aqua" buttonTextColor="text-navy" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
-          
-            
-            <Footer1/>
-              
+            <Footer1/>              
         </div>
     )
 }
