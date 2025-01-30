@@ -31,12 +31,14 @@ function RulesRegulation() {
 
         {/* Years of Excellence Badge */}
        
-        <div className="absolute bottom-8 -left-4 border-l-4 border-navy text-white rounded-lg bg-blue-500 shadow-lg animate-bounce  z-20" style={{ width: '230px', height: '80px' }}>
-  <div className="flex items-center justify-center   pt-4">
-    <div className="text-navy text-2xl md:text-3xl font-bold " >{count}+</div>
-    <p className="text-sm md:text-base font-medium ml-2">Years of Excellence</p>
+      {/* Years of Excellence Badge */}
+<div className="absolute bottom-4 left-2 md:bottom-8 md:-left-4 border-l-4 border-navy text-white rounded-lg bg-blue-500 shadow-lg animate-bounce z-20 w-fit px-4 py-4 md:px-6 md:py-5">
+  <div className="flex items-center justify-center space-x-2">
+    <div className="text-white text-xl md:text-3xl font-bold">{count}+</div>
+    <p className="text-xs md:text-sm lg:text-base font-medium">Years of Excellence</p>
   </div>
 </div>
+
 
 
 

@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faChalkboardTeacher, faTools, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import ani3 from '../../../assets/certificates/ani3.png';
 
 function Benefits() {
   return (
-    <div data-aos="fade-up" className="w-full bg-gray-50 flex flex-wrap">
+    <div data-aos="fade-up" className="w-full bg-gray-200 flex flex-wrap px-4 sm:px-6 lg:px-8">
+      
       {/* First half with heading and paragraph */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-16 px-8 bg-gray-50">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-16 px-8 bg-gray-200 relative">
         <h1 className="pb-10 font-heading text-3xl md:text-4xl font-bold text-aqua mb-4">
           Empowering Your Growth with World-Class Services
         </h1>
@@ -13,56 +15,58 @@ function Benefits() {
           Discover unparalleled opportunities to enhance your skills and achieve your career aspirations.
           <br />
           <br />
-          Our comprehensive services are tailored to meet your needs, with innovative tools, expert guidance,
-          and a global network that opens doors to endless possibilities.
+          <div className="border-l-8 border-pink-600 pl-4">
+            Our comprehensive services are tailored to meet your needs, with innovative tools, expert guidance,  
+            and a global network that opens doors to endless possibilities.
+          </div>
         </p>
+
+
+        {/* Enquire Button */}
+        <a
+          href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-body border-4 border-transparent mt-14 inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-teal-500 to-navy text-sm md:text-base lg:text-xl font-medium rounded-lg shadow-lg hover:bg-blue-500 hover:text-white hover:border-4 hover:border-blue-400 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Enquire Now
+        </a>
+
+        
+        {/* Image positioned at the bottom-right but wrapped correctly for smaller screens */}
+        <div className="relative w-full flex justify-end mt-6">
+          <img 
+            data-aos="fade"
+            alt="animation"
+            className="w-18 sm:w-22 md:w-26 lg:w-30 animate-bounce"
+            src={ani3}
+          />
+        </div>
       </div>
 
       {/* Second half with rows of boxes */}
-      <div className="w-full md:w-1/2 flex flex-wrap justify-between gap-6 py-16 px-8 bg-gray-50">
-        {/* First box */}
-        <div className="relative bg-white p-6 md:p-10 rounded-lg shadow-lg text-center group hover:bg-navy transition-all duration-300 ease-in-out w-full md:w-[48%] transform -rotate-3 hover:rotate-0">
-          <FontAwesomeIcon icon={faAward} size="3x" className="text-aqua mb-4" />
-          <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-white transition-all duration-300 ease-in-out">
-            A Decade of Excellence
-          </h2>
-          <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-            10 years of expertise in delivering high-quality education. We're recognized as leaders in the field.
-          </p>
-        </div>
-
-        {/* Second box */}
-        <div className="relative bg-white p-6 md:p-10 rounded-lg shadow-lg text-center group hover:bg-navy transition-all duration-300 ease-in-out w-full md:w-[48%] transform rotate-3 hover:rotate-0">
-          <FontAwesomeIcon icon={faChalkboardTeacher} size="3x" className="text-aqua mb-4" />
-          <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-white transition-all duration-300 ease-in-out">
-            Cutting-Edge Training
-          </h2>
-          <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-            Stay ahead in your career with our up-to-date training, incorporating the latest trends and tools.
-          </p>
-        </div>
-
-        {/* Third box */}
-        <div className="relative bg-white p-6 md:p-10 rounded-lg shadow-lg text-center group hover:bg-navy transition-all duration-300 ease-in-out w-full md:w-[48%] transform -rotate-3 hover:rotate-0">
-          <FontAwesomeIcon icon={faTools} size="3x" className="text-aqua mb-4" />
-          <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-white transition-all duration-300 ease-in-out">
-            Comprehensive Tools
-          </h2>
-          <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-            Access the latest tools and technologies to excel in your field.
-          </p>
-        </div>
-
-        {/* Fourth box */}
-        <div className="relative bg-white p-6 md:p-10 rounded-lg shadow-lg text-center group hover:bg-navy transition-all duration-300 ease-in-out w-full md:w-[48%] transform rotate-3 hover:rotate-0">
-          <FontAwesomeIcon icon={faHandshake} size="3x" className="text-aqua mb-4" />
-          <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-white transition-all duration-300 ease-in-out">
-            Sustainable Partnerships
-          </h2>
-          <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-            Foster long-term partnerships with experts and industry leaders.
-          </p>
-        </div>
+      <div className="w-full md:w-1/2 flex flex-wrap justify-between gap-4 py-16 px-8 bg-gray-200">
+        
+        {/* Box components */}
+        {[ 
+          { icon: faAward, title: "A Decade of Excellence", text: "10 years of expertise in delivering high-quality education. We are recognized as leaders in the field." },
+          { icon: faChalkboardTeacher, title: "Cutting-Edge Training", text: "Stay ahead in your career with our up-to-date training, incorporating the latest trends and tools." },
+          { icon: faTools, title: "Comprehensive Tools", text: "Access the latest tools and technologies to excel in your field." },
+          { icon: faHandshake, title: "Sustainable Partnerships", text: "Foster long-term partnerships with experts and industry leaders." }
+        ].map((box, index) => (
+          <div
+            key={index}
+            className={`relative bg-white p-6 md:p-8 rounded-lg shadow-lg text-center group hover:bg-navy transition-all duration-300 ease-in-out w-full sm:w-[48%] transform ${index % 2 === 0 ? "-rotate-2" : "rotate-2"} hover:rotate-0`}
+          >
+            <FontAwesomeIcon icon={box.icon} size="3x" className="text-aqua mb-4" />
+            <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-pink-500 transition-all duration-300 ease-in-out">
+  {box.title}
+</h2>
+            <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+              {box.text}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

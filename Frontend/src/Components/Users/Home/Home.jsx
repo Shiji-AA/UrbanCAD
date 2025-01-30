@@ -26,10 +26,9 @@ export default function Home() {
       <div className="flex flex-col items-start justify-start h-full w-full lg:w-[48%] bg-gray-800 bg-opacity-20 p-6 md:p-8 lg:p-12 space-y-6">
         <div className="text-left space-y-4">
           {/* Main Headings */}
-          <h1 className=" pb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-aqua text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
+          <h1 className="pb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-aqua text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight hover:shadow-2xl transform transition duration-500 ease-in-out hover:scale-105">
             Build Your Legacy!
-          </h1>
-          
+          </h1>         
 
           <h3
             className="font-body text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500 text-lg md:text-xl lg:text-2xl font-medium leading-relaxed hover:text-blue-500 transform transition-all duration-500 hover:scale-110 hover:translate-y-2"
