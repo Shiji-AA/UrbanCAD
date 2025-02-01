@@ -1,7 +1,8 @@
 import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
-import { join } from 'path';  // Importing join to handle paths correctly
+import { fileURLToPath } from 'url';  // Import fileURLToPath to work with __dirname in ESM
+import { dirname, join } from 'path';  // Import dirname to resolve the current directory path
 import UserRoutes from './Routes/UserRoutes.js';
 import { connectDB } from './config/db.js';
 import adminRouter from './Routes/AdminRoutes.js';
@@ -25,6 +26,10 @@ app.use(cors(corsOptions)); // Apply the CORS options after defining them
 // API routes
 app.use('/api/users', UserRoutes);
 app.use('/api/admin', adminRouter);
+
+// Resolving __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Serving static files
 app.use(express.static(join(__dirname, "../../../Frontend/dist")));
