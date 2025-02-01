@@ -36,7 +36,7 @@ app.use(express.static(join(__dirname, "../../../Frontend/dist")));
 
 // Fallback route for any request to send index.html from the frontend dist
 app.get("*", function (req, res) {
-  res.sendFile(join(__dirname, "../../Frontend/dist/index.html"));
+  res.sendFile(join(__dirname, "../../Frontend/dist"));
 });
 
 // Health check endpoint
