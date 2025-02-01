@@ -1,22 +1,44 @@
-import express from  'express';
+import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
-import UserRoutes from './Routes/UserRoutes.js'
+import { join } from 'path';  // Importing join to handle paths correctly
+import UserRoutes from './Routes/UserRoutes.js';
 import { connectDB } from './config/db.js';
 import adminRouter from './Routes/AdminRoutes.js';
 
-dotenv.config()
-connectDB()
+dotenv.config();
+connectDB();
 
-const app= express()
+const app = express();
 
-app.use(express.json())
-app.use(express.urlencoded({extended:true}))
-app.use(cors());
-app.use('/api/users',UserRoutes)
-app.use('/api/admin',adminRouter);
-app.get('/',(req,res)=>res.send("server is ready"))
-const port= process.env.PORT||3000
+// Middleware setup
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(port,()=>
-console.log("server started"))
+// CORS configuration
+const corsOptions = {
+  origin: ['http://localhost:4000', "https://urbancad.in", "http://localhost:3000"],
+  methods: "GET, PUT, POST, PATCH, DELETE"
+};
+app.use(cors(corsOptions)); // Apply the CORS options after defining them
+
+// API routes
+app.use('/api/users', UserRoutes);
+app.use('/api/admin', adminRouter);
+
+// Serving static files
+app.use(express.static(join(__dirname, "../../../Frontend/dist")));
+
+// Fallback route for any request to send index.html from the frontend dist
+app.get("*", function (req, res) {
+  res.sendFile(join(__dirname, "../../../Frontend/dist/index.html"));
+});
+
+// Health check endpoint
+app.get('/', (req, res) => res.send("Server is ready"));
+
+// Get the port from environment variable or default to 3000
+const port = process.env.PORT || 3000;
+
+// Start the server
+app.listen(port, () => console.log(`Server started on port ${port}`));
