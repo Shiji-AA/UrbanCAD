@@ -20,6 +20,7 @@ function AboutUs() {
                 style={{ animationDelay: "400ms" }}>
                 {`DREAM. `}
             </span>
+            
             <span className="bg-clip-text text-transparent bg-white animate-fade-left"
                 style={{ animationDelay: "800ms" }}>
                 {`ACHIEVE. `}

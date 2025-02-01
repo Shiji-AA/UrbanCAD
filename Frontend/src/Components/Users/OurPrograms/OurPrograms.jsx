@@ -32,13 +32,13 @@ function OurPrograms() {
     {
       title: 'Information Technology',
       programs: [
-        'Program 1', 'Program 2', 'Program 3'
+        'Data Science and ML Masterclass with Python', 'Certificate Program in Generative AI', 'Certificate Course on Cyber Security Analytics','Certificate Course on Software Testing'
       ]
     },
     {
       title: 'Project Management',
       programs: [
-        'Program 1', 'Program 2', 'Program 3'
+        'Certificate Course on Project Management for Engineers', 'Certificate Course on Public Infrastructure Design and Management'
       ]
     }
   ];

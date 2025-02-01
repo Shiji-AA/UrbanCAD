@@ -16,7 +16,6 @@ import Hero2 from "../Hero/Hero2civil";
 import Footer from "../Footer/Footer1";
 import Navbar from "../Navbar/Navbar";
 
-// Define the courseDetails as an array of objects with correct fields
 const courseDetails = [
   {
     _id: 1,
