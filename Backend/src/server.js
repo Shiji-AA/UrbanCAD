@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from "cors";
 import dotenv from 'dotenv';
-import { fileURLToPath } from 'url';  // Import fileURLToPath to work with __dirname in ESM
-import { dirname, join } from 'path';  // Import dirname to resolve the current directory path
+import { fileURLToPath } from 'url';  
+import { dirname, join } from 'path'; 
 import UserRoutes from './Routes/UserRoutes.js';
 import { connectDB } from './config/db.js';
 import adminRouter from './Routes/AdminRoutes.js';
@@ -36,7 +36,7 @@ app.use(express.static(join(__dirname, "../../../Frontend/dist")));
 
 // Fallback route for any request to send index.html from the frontend dist
 app.get("*", function (req, res) {
-  res.sendFile(join(__dirname, "../../../Frontend/dist/index.html"));
+  res.sendFile(join(__dirname, "../../Frontend/dist/index.html"));
 });
 
 // Health check endpoint
