@@ -18,10 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 
 // CORS configuration
 const corsOptions = {
-  origin: ['http://localhost:4000', "https://urbancad.in", "http://localhost:3000"],
+  origin: ['http://localhost:4000', "https://urbancad.in/", "http://localhost:3000"],
   methods: "GET, PUT, POST, PATCH, DELETE"
 };
-app.use(cors(corsOptions)); // Apply the CORS options after defining them
+app.use(cors(corsOptions)); 
 
 // API routes
 app.use('/api/users', UserRoutes);
@@ -34,9 +34,9 @@ const __dirname = dirname(__filename);
 // Serving static files
 app.use(express.static(join(__dirname, "../../Frontend/dist")));
 
-// Fallback route for any request to send index.html from the frontend dist
-app.get("/", function (req, res) {
-  res.sendFile(join(__dirname, "../../Frontend/dist"));
+
+app.get('*', (req, res) => {
+  res.sendFile(join(__dirname, "../../Frontend/dist/index.html"));
 });
 
 // Health check endpoint
