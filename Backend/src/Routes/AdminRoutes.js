@@ -6,7 +6,7 @@ const adminRouter = express.Router();
 
 adminRouter.post('/adminregister' , adminRegister)
 adminRouter.post('/admin' , adminLogin)
-adminRouter.get('/enquirydata' , enquiryData);
+adminRouter.get('/getenquirydata' , enquiryData);
 adminRouter.post("/disqualifyuser/:id", disqualifyUser);
 adminRouter.post("/qualifyuser/:id",  qualifyUser);
 export default adminRouter

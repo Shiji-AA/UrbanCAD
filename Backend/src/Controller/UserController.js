@@ -4,13 +4,9 @@ import Enquiry from '../Model/enquiryModel.js';
  const addEnquiry = async (req, res) => {
     try {
         const { name, phone, email } = req.body;
-
-        // Validate the request body
         if (!name || !phone || !email) {
             return res.status(400).json({ message: 'All fields are required' });
         }
-
-        // Save the enquiry to the database
         const newEnquiry = new Enquiry({
             name,
             phone,

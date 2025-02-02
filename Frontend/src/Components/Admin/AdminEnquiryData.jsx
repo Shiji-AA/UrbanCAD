@@ -12,7 +12,7 @@ function AdminEnquiryData() {
     // Fetch enquiry data from the backend
     const fetchEnquiries = async () => {
       try {
-        const response = await axiosInstanceAdmin.get('/enquirydata');
+        const response = await axiosInstanceAdmin.get('/getenquirydata');
         if (response.data) {
           console.log(response.data, 'response enquiry');
           setEnquiries(response.data);
