@@ -53,12 +53,42 @@ function Accreditations() {
       alt="SketchUp Certification"
       className="h-20 md:h-24 object-contain"
     />
+    <img
+      src={autodesk}
+      alt="Autodesk Certification"
+      className="h-16 md:h-24 object-contain"
+    />
+    <img
+      src={bentley}
+      alt="Bentley Certification"
+      className="h-14 md:h-20 object-contain"
+    />
+    <img
+      src={sketchup}
+      alt="SketchUp Certification"
+      className="h-20 md:h-24 object-contain"
+    />
+    <img
+      src={autodesk}
+      alt="Autodesk Certification"
+      className="h-16 md:h-24 object-contain"
+    />
+    <img
+      src={bentley}
+      alt="Bentley Certification"
+      className="h-14 md:h-20 object-contain"
+    />
+    <img
+      src={sketchup}
+      alt="SketchUp Certification"
+      className="h-20 md:h-24 object-contain"
+    />
   </div>
 </div>
 
 
       {/* Button */}
-      <a href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services." target='_blank' rel='noopener noreferrer'>
+      <a href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services." target='_blank' rel='noopener noreferrer'>
       <button className="font-body bg-gradient-to-r from-aqua to-navy text-white py-3 px-10 rounded-full hover:from-navy hover:to-aqua transition duration-300 mt-8 text-2xl">
         Contact Us
       </button>

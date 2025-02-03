@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa"; // Importing checkmark icon
-import image4 from "../../../assets/certificates/image4.jpeg";
+import image4 from "../../../assets/certificates/image16.jpeg";
 import ani2 from "../../../assets/certificates/ani2.png";
 import { useEffect, useState } from "react";
 
@@ -32,7 +32,7 @@ function RulesRegulation() {
         {/* Years of Excellence Badge */}
        
       {/* Years of Excellence Badge */}
-<div className="absolute bottom-4 left-2 md:bottom-8 md:-left-4 border-l-4 border-navy text-white rounded-lg bg-blue-500 shadow-lg animate-bounce z-20 w-fit px-4 py-4 md:px-6 md:py-5">
+<div className="absolute bottom-4 left-2 md:bottom-8 md:-left-4 border-l-4 border-purple-400 text-white rounded-lg bg-navy shadow-lg animate-bounce z-20 w-fit px-4 py-4 md:px-6 md:py-5">
   <div className="flex items-center justify-center space-x-2">
     <div className="text-white text-xl md:text-3xl font-bold">{count}+</div>
     <p className="text-xs md:text-sm lg:text-base font-medium">Years of Excellence</p>
@@ -56,7 +56,7 @@ function RulesRegulation() {
           <p className="font-body text-base text-gray-600 mb-6 leading-relaxed text-lg">
             Joining the UrbanCAD franchise offers a unique opportunity in a
             growing industry, with proven business models and strong support. As
-            a franchisee, you'll receive training, marketing, and operational
+            a franchisee, you will receive training, marketing, and operational
             assistance to ensure success, along with the resources to grow and
             maximize your returns.
           </p>

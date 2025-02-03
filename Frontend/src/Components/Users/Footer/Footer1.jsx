@@ -89,7 +89,7 @@ function Footer1() {
               </h2>
               <ul className="space-y-3">
                 {[
-                  { icon: faPhone, text: "+91-799 421 1144" },
+                  { icon: faPhone, text: "+91-963 322 1153" },
                   { icon: faMapMarkerAlt, text: "Kerala, India" },
                   { icon: faEnvelope, text: "info@arcite.in" },
                 ].map(({ icon, text }) => (
@@ -112,14 +112,14 @@ function Footer1() {
               <a href="https://technical.arcite.in/" className="text-aqua">
                 ARCITE
               </a>{" "}
-              Innovation
+              Initiative
             </a>
           </span>
 
           <div className="flex items-center gap-6 mt-4 sm:mt-0">
-            <a href="" className="text-gray-900">
+            {/* <a href="" className="text-gray-900">
               Terms Of Services
-            </a>
+            </a> */}
 
             {/* Scroll to Top Button */}
             <button

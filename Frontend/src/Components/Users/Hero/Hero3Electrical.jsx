@@ -1,4 +1,4 @@
-//import cat1 from '../../../assets/electrical/electricalhero1.jpg'
+
 import cat1 from '../../../assets/electrical/heroelectrical2.avif'
 function Hero3Electrical() {
   return (

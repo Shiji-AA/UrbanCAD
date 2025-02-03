@@ -4,13 +4,30 @@ import {
   faUserGraduate,
   faBookOpen,
 } from "@fortawesome/free-solid-svg-icons";
-import heroimage from "../../../assets/certificates/image6.jpeg";
-//import heroimage from '../../../assets/heroimage4.jpg';
+import heroimage from "../../../assets/certificates/image2.jpeg";
 import heroimage1 from "../../../assets/heroimage6.jpg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [count, setCount] = useState(50);
+  const [count, setCount] = useState(80);  //courses
+  const [yearsCount, setYearsCount] = useState(0);
+  const [studentsCount, setStudentsCount] = useState(0);
+
+  useEffect(() => {
+    const yearsInterval = setInterval(() => {
+      setYearsCount((prev) => (prev < 10 ? prev + 1 : prev));
+    }, 100); // Adjust speed by changing interval time
+
+    // studentsCount
+    const studentsInterval = setInterval(() => {
+      setStudentsCount((prev) => (prev < 10 ? prev + 1 : prev));
+    }, 100); // Faster increment for a larger number
+
+    return () => {
+      clearInterval(yearsInterval);
+      clearInterval(studentsInterval);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,7 +63,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faAward} size="3x" color="aqua" />
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">
-                  {count}+
+                  {yearsCount}+
                 </div>
                 <p className="text-white font-body text-sm md:text-base font-medium mt-1">
                   Years of Excellence
@@ -54,31 +71,31 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Feature 2 */}
-            <div  data-aos="fade-up" className="flex items-center text-left space-x-4">
-              <FontAwesomeIcon icon={faUserGraduate} size="3x" color="aqua" />
-              <div>
-                <div className="text-2xl md:text-3xl font-bold text-white">
-                  {count}+
-                </div>
-                <p className="text-white font-body text-sm md:text-base font-medium mt-1">
-                  Students Trained
-                </p>
-              </div>
-            </div>
+            {/* Feature 2 - 10+ Years of Excellence */}
+      <div data-aos="fade-up" className="flex items-center text-left space-x-4">
+        <FontAwesomeIcon icon={faUserGraduate} size="3x" color="aqua" />
+        <div>
+          <div className="text-2xl md:text-3xl font-bold text-white">
+            {studentsCount.toLocaleString()}k+
+          </div>
+          <p className="text-white font-body text-sm md:text-base font-medium mt-1">
+            Students Trained
+          </p>
+        </div>
+      </div>
 
-            {/* Feature 3 */}
-            <div data-aos="fade-up" className="flex items-center text-left space-x-4">
-              <FontAwesomeIcon icon={faBookOpen} size="3x" color="aqua" />
-              <div>
-                <div className="text-2xl md:text-3xl font-bold text-white">
-                  {count}+
-                </div>
-                <p className="text-white font-body text-sm md:text-base font-medium mt-1">
-                  Industrial Courses
-                </p>
-              </div>
-            </div>
+           {/* Feature 3 - 10K+ Students Trained */}
+      <div data-aos="fade-up" className="flex items-center text-left space-x-4">
+        <FontAwesomeIcon icon={faBookOpen} size="3x" color="aqua" />
+        <div>
+          <div className="text-2xl md:text-3xl font-bold text-white">
+            {count}+
+          </div>
+          <p className="text-white font-body text-sm md:text-base font-medium mt-1">
+            Industrial Courses
+          </p>
+        </div>
+      </div>
           </div>
 
           <p className="font-body text-xl md:text-5xl lg:text-xl font-semi-bold text-transparent bg-clip-text text-white leading-tight text-center lg:text-left pb-10">
@@ -88,7 +105,7 @@ export default function Home() {
 
           {/* Enquire Button */}
           <a
-            href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+            href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
             className="font-body border-4 border-transparent mt-6 inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-teal-500 to-blue-600 text-white text-sm md:text-base lg:text-xl font-medium rounded-lg shadow-lg hover:bg-blue-500 hover:text-white hover:border-4 hover:border-blue-400 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"

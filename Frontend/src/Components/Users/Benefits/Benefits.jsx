@@ -24,7 +24,7 @@ function Benefits() {
 
         {/* Enquire Button */}
         <a
-          href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+          href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
           className="font-body border-4 border-transparent mt-14 inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-teal-500 to-navy text-sm md:text-base lg:text-xl font-medium rounded-lg shadow-lg hover:bg-blue-500 hover:text-white hover:border-4 hover:border-blue-400 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"

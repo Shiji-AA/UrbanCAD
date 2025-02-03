@@ -7,7 +7,7 @@ function EnquiryDiv({ bgColor = 'bg-navy', textColor = 'text-white', buttonBgCol
                    
                 </div>
                 <a
-                  href="https://wa.me/918129244883?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+                  href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
                   target="_blank"
                   rel="noopener noreferrer">
                       <button className={`${buttonBgColor} ${buttonTextColor} py-3 px-6  font-semibold transition-all duration-300 ease-in-out ${buttonHoverBgColor} ${buttonHoverTextColor}`}>
