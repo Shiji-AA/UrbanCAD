@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa"; // Importing checkmark icon
-import image4 from "../../../assets/certificates/image16.jpeg";
+import image4 from "../../../assets/certificates/image19.jpeg";
 import ani2 from "../../../assets/certificates/ani2.png";
 import { useEffect, useState } from "react";
 

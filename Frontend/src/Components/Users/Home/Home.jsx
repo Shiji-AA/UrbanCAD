@@ -4,7 +4,7 @@ import {
   faUserGraduate,
   faBookOpen,
 } from "@fortawesome/free-solid-svg-icons";
-import heroimage from "../../../assets/certificates/image2.jpeg";
+import heroimage from "../../../assets/certificates/image28.jpeg";
 import heroimage1 from "../../../assets/heroimage6.jpg";
 import { useEffect, useState } from "react";
 
@@ -125,8 +125,8 @@ export default function Home() {
             className="bg-aqua absolute z-0 w-full h-auto transform rotate-12 shadow-lg"
             style={{
               backgroundColor: "aqua",
-              top: "-1px",
-              left: "30px",
+              top: "4px",
+              left: "40px",
               borderRadius: "5% 25% 5% 25%",
               maxWidth: "90%", // Adjusted size
             }}

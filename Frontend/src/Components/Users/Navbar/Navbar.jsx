@@ -76,7 +76,45 @@ function Navbar() {
               Home
             </Link>
 
-      
+            {/* Our Programs Dropdown */}
+            {/* <div className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="text-navy font-semibold hover:text-aqua px-3 py-3 border-b-2 border-transparent hover:border-aqua md:border-none"
+              >
+                Our Programs
+              </button>
+
+          
+              {dropdownOpen && (
+                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-52 border border-aqua z-50">
+                  <Link
+                    to="/civil"
+                    className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
+                  >
+                    Civil Engineering
+                  </Link>
+                  <Link
+                    to="/mechanical"
+                    className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
+                  >
+                    Mechanical Engineering
+                  </Link>
+                  <Link
+                    to="/electrical"
+                    className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
+                  >
+                    Electrical Engineering
+                  </Link>
+                   <Link
+                    to="/datascience"
+                    className="block px-4 py-2 text-navy hover:bg-aqua hover:text-white"
+                  >
+                    Data Science
+                  </Link> 
+                </div>  
+              )}
+            </div> */}
 
             <Link
               to="/aboutus"

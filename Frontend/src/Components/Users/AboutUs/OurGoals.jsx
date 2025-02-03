@@ -1,6 +1,6 @@
-import image1 from '../../../assets/certificates/image9.jpeg';
-import image2 from '../../../assets/certificates/image7.jpeg';
-import image3 from '../../../assets/certificates/image13.jpeg';
+import image1 from '../../../assets/certificates/image25.jpeg';
+import image2 from '../../../assets/certificates/image24.jpeg';
+import image3 from '../../../assets/certificates/image21.jpeg';
 
 function OurGoals() {
   return (
