@@ -2,7 +2,7 @@ import autodesk from '../../../assets/certificates/autodesk.png';
 import bentley from '../../../assets/certificates/bentley.png';
 import sketchup from '../../../assets/certificates/sketchup.png';
 import lightpink from '../../../assets/certificates/lightpinkbg1.avif';
-
+import '../../../index.css'
 function Accreditations() {
   return (
     <div data-aos="fade-up"

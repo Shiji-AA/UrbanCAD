@@ -52,3 +52,25 @@
   animation: fade-in 1s ease-out forwards;
 }
 
+/* ===============accreditation================== */
+
+.slide-track {
+  display: flex;
+  gap: 30px; /* Adjust spacing between images */
+  animation: slide 80s infinite; /* Slower speed (adjust time as needed) */
+  width: calc(300px * 12); /* Adjust based on the number of images */
+}
+
+.slide-item {
+  height: 80px; /* Adjust as per your design */
+  object-fit: contain;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
