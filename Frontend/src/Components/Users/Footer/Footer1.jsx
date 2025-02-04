@@ -41,10 +41,9 @@ function Footer1() {
               <img src={logoArcite2} className="h-16 mr-3" alt="ARCITE" />
             </Link>
             <p className="text-lg mt-6 text-gray-800 leading-relaxed">
-              ARCITE, an ISO 9001-2015 certified institution, was founded in
-              2015 with the goal of fostering a better engineering culture by
-              providing quality and affordable training programs to the emerging
-              engineering community.
+            Urban CAD is designed to bring specialized software training to students across the globe. 
+            It aims to establish a network of training centres, bridging geographical gaps and 
+            empowering students to acquire industry-relevant skills, no matter where they are.
             </p>
           </div>
 
