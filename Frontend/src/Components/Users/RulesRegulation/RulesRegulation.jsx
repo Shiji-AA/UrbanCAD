@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function RulesRegulation() {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+  useEffect(() => { 
     const interval = setInterval(() => {
       setCount((prevCount) => (prevCount < 10 ? prevCount + 1 : prevCount));
     }, 50); // Adjust speed by changing the interval time

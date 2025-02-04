@@ -91,7 +91,7 @@ function Footer1() {
                 {[
                   { icon: faPhone, text: "+91-963 322 1153" },
                   { icon: faMapMarkerAlt, text: "Kerala, India" },
-                  { icon: faEnvelope, text: "info@arcite.in" },
+                  { icon: faEnvelope, text: "info@urbancad.in" },
                 ].map(({ icon, text }) => (
                   <li key={text} className="flex items-center gap-3 text-sm">
                     <FontAwesomeIcon icon={icon} className="text-aqua" />
