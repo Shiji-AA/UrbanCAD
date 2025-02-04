@@ -16,7 +16,7 @@ function Toolbar() {
         <div className="flex items-center space-x-1">
           <FaEnvelope className="text-white" />
           <a
-            href="mailto:info@arcite.in"
+            href="mailto:info@urbancad.in"
             className="hover:underline text-white"
           >
             info@urbancad.in
