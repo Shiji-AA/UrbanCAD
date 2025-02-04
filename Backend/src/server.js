@@ -17,11 +17,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // CORS configuration
+
 const corsOptions = {
-  origin: ['http://localhost:4000', "https://urbancad.in/", "http://localhost:3000"],
-  methods: "GET, PUT, POST, PATCH, DELETE"
+  origin: ['http://localhost:4000', 'https://urbancad.in', 'https://www.urbancad.in', 'http://localhost:3000'],
+  methods: "GET, PUT, POST, PATCH, DELETE",
+  allowedHeaders: ["Content-Type", "Authorization"]
 };
-app.use(cors(corsOptions)); 
+app.use(cors(corsOptions));
+
 
 // API routes
 app.use('/api/users', UserRoutes);
