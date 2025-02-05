@@ -77,6 +77,7 @@ const adminLogin = async (req, res) => {
 
 
   const enquiryData = async (req, res) => {
+    console.log("dvchdgjdhgjhdcjk")
     try {
         const enquiryData = await Enquiry.find();     
         res.status(200).json(enquiryData); 

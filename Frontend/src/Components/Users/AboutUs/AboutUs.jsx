@@ -2,7 +2,7 @@ import Footer1 from "../Footer/Footer1";
 import Navbar from "../Navbar/Navbar";
 import vision from '../../../assets/certificates/vision2.jpeg';
 import mission from '../../../assets/certificates/mission.jpg';
-import heroimage3 from '../../../assets/heroimage3.jpg'
+import heroimage3 from '../../../assets/certificates/IMAGE1.jpeg'
 
 
 
@@ -13,7 +13,7 @@ function AboutUs() {
 
             {/* Hero Section */}
          {/* Hero Section */}
-<div className="relative text-navy py-10 bg-cover bg-center bg-no-repeat" 
+<div className="relative text-navy py-16 bg-cover bg-center bg-no-repeat" 
     style={{ backgroundImage: `url(${heroimage3})` }}>
     <div className="max-w-screen-xl mx-auto text-center px-6 py-16 rounded-lg">
         <h2 className="font-heading text-4xl font-extrabold mb-6 text-white">
