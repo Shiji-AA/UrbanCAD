@@ -13,6 +13,7 @@ import AdminRegister from './Components/Admin/AdminRegister';
 import AdminEnquiryData from './Components/Admin/AdminEnquiryData';
 import AboutUs from './Components/Users/AboutUs/AboutUs';
 import Civil from "./Components/Users/Cources/Civil";
+import Franchise from "./Components/Users/Franchise/Franchise";
 
 function App() {
   // Initialize AOS for global animations
@@ -35,6 +36,7 @@ function App() {
         <Route path="/mechanical" element={<Mechanical />} />
         <Route path="/datascience" element={<DataScience />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/franchise" element={<Franchise />} />
 
         {/* AdminSide */}
         <Route path="/adminregister" element={<AdminRegister />} />

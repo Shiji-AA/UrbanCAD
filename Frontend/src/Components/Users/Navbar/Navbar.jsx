@@ -75,6 +75,12 @@ function Navbar() {
             >
               Home
             </Link>
+            <Link
+              to="/franchise"
+              className="text-navy font-semibold hover:text-aqua px-3 py-3 border-b-2 border-transparent hover:border-aqua md:border-none"
+            >
+              Franchise
+            </Link>
 
             {/* Our Programs Dropdown */}
             {/* <div className="relative">

@@ -27,9 +27,24 @@ const enquirySchema = new mongoose.Schema(
                 'Please enter a valid email address',
             ],
         },
-        isQualified:{
-            type:Boolean,        
-            default:false
+        location: {
+            type: String,
+            required: [true, 'Location is required'],
+        
+        },
+        state: {
+            type: String,
+            required: [true, 'State is required'],
+         
+        },
+        district: {
+            type: String,
+            required: [true, 'District is required'],
+          
+        },
+        isQualified: {
+            type: Boolean,
+            default: false,
         },
     },
     { timestamps: true }
