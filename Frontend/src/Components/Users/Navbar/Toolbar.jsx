@@ -12,8 +12,8 @@ function Toolbar() {
   return (
     <div className="font-body w-full bg-gradient-to-r from-teal-400 via-teal-500 to-gray-800 text-white py-3 px-8 flex flex-col sm:flex-row justify-between items-center text-m shadow-lg">
       {/* Top Section: Email and Phone */}
-      <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
-        <div className="flex items-center space-x-1 whitespace-nowrap">
+      <div className="flex flex-wrap items-center space-x-4">
+        <div className="flex items-center space-x-1">
           <FaEnvelope className="text-white hover:text-navy" />
           <a
             href="mailto:info@urbancad.in"
@@ -22,7 +22,7 @@ function Toolbar() {
             info@urbancad.in
           </a>
         </div>
-        <div className="flex items-center space-x-1 whitespace-nowrap">
+        <div className="flex items-center space-x-1">
           <FaPhoneAlt className="text-white hover:text-navy" />
           <a
             href="tel:+919633221153"
