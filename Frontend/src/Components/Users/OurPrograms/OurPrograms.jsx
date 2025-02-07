@@ -74,7 +74,7 @@ function OurPrograms() {
                 <h2 className="font-heading text-xl font-semibold flex-1">
                   {category.title}
                 </h2>
-                <span className="font-bold text-3xl border border-gray-900 w-6 h-6 rounded-full pb-2 flex items-center justify-center">
+                <span className="font-bold text-3xl  rounded-full  flex items-center justify-center">
                   {expandedCategories.includes(index) ? '-' : '+'}
                 </span>
               </div>

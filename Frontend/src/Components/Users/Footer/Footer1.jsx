@@ -89,7 +89,7 @@ function Footer1() {
               </h2>
               <ul className="space-y-3">
                 {[
-                  { icon: faPhone, text: "+91-963 322 1153" },
+                  { icon: faPhone, text: "+91-9633221153" },
                   { icon: faMapMarkerAlt, text: "Kerala, India" },
                   { icon: faEnvelope, text: "info@urbancad.in" },
                 ].map(({ icon, text }) => (
