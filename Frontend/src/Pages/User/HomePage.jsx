@@ -19,7 +19,7 @@ function HomePage() {
             <OurGoals/>   
             <OurPrograms/>
             <ContactForm/>  
-            <EnquiryDiv bgColor="bg-purple-300" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
+            <EnquiryDiv bgColor="bg-white" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
             <Benefits/>
             <Accreditations/>
             <EnquiryDiv bgColor="bg-navy" textColor="text-white" buttonBgColor="bg-aqua" buttonTextColor="text-navy" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
