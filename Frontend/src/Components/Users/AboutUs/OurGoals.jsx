@@ -4,9 +4,9 @@ import image3 from '../../../assets/certificates/image21.jpeg';
 
 function OurGoals() {
   return (
-    <div data-aos="fade-up" className="flex flex-col md:flex-row w-full bg-gray-100 pt-20  pb-20 px-0">
+    <div data-aos="fade-up" className="flex flex-col md:flex-row w-full bg-gray-100 pt-20 pb-20 px-0 overflow-hidden">
       {/* Left Column: Image */}
-      <div className="w-full md:w-1/2 flex items-center justify-center relative">
+      <div className="w-full md:w-1/2 flex items-center justify-center relative overflow-hidden">
         {/* Image 1 */}
         <img
           src={image2}
@@ -28,11 +28,11 @@ function OurGoals() {
       </div>
 
       {/* Right Column: Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 pl-20 ">
-        <h2 className=" font-heading text-3xl font-bold text-aqua mb-4">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 pl-20">
+        <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
           Educational Empowerment
         </h2>
-        <ul className="font-body list-disc ml-5 text-gray-800  text-lg mb-8">
+        <ul className="font-body list-disc ml-5 text-gray-800 text-lg mb-8">
           <li>Breaking barriers to skill acquisition</li><hr/>
           <li>Providing accessible, affordable learning paths</li><hr/>
           <li>Bridging industry skill gaps</li><hr/>
@@ -42,7 +42,7 @@ function OurGoals() {
         <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
           Entrepreneurial Enablement
         </h2>
-        <ul className="font-body list-disc ml-5 text-gray-800 text-lg ">
+        <ul className="font-body list-disc ml-5 text-gray-800 text-lg">
           <li>Low-investment franchise model</li><hr/>
           <li>Turnkey business opportunity</li><hr/>
           <li>Support for aspiring education entrepreneurs</li><hr/>

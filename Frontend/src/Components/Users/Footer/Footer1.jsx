@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import footerbg from "../../../assets/certificates/footerbg1.avif";
+import arciteLogo from '../../../assets/certificates/ARCITEBLACK.png'
 import {
   faFacebookF,
   faInstagram,
@@ -104,22 +105,23 @@ function Footer1() {
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row sm:justify-between items-center mt-6 pt-4 border-t-2 border-gray-300 text-lg">
-          <span className="text-gray-900 text-center sm:text-left">
-            © 2025{" "}
-            <a href="">
-              An{" "}
-              <a href="https://urbancad.in/" className="text-aqua">
-                ARCITE
-              </a>{" "}
-              Initiative
-            </a>
-          </span>
+        <span className="text-gray-900 text-center sm:text-left">
+  © 2025{" "}
+  <a href="#">
+    An{" "}
+    <a href="https://www.arcite.in/" className="text-aqua" style={{ display: 'inline-flex', alignItems: 'center' }}>
+      <img src={arciteLogo} alt="Arcite Logo" style={{ width: 60, height: 20, marginLeft: 4, marginRight: 4 }} />
+    </a>{" "}
+    Initiative
+  </a>
+</span>
+
 
           <div className="flex items-center gap-6 mt-4 sm:mt-0">
             {/* Scroll to Top Button */}
             <button
               onClick={scrollToTop}
-              className="bg-aqua text-white p-3 w-12 h-12 rounded-full shadow-lg transform rotate-[-45deg] transition-all duration-300 hover:bg-navy hover:rotate-0"
+              className=" bg-aqua text-white p-3 w-12 h-12 rounded-full shadow-lg transform rotate-[-45deg] transition-all duration-300 hover:bg-navy hover:rotate-0"
               aria-label="Scroll to top"
             >
               <FontAwesomeIcon icon={faArrowUp} size="lg" />

@@ -2,9 +2,7 @@ import Footer1 from "../Footer/Footer1";
 import Navbar from "../Navbar/Navbar";
 import vision from '../../../assets/certificates/vision2.jpeg';
 import mission from '../../../assets/certificates/mission.jpg';
-import heroimage3 from '../../../assets/certificates/IMAGE1.jpeg'
-
-
+import heroimage3 from '../../../assets/certificates/IMAGE1.jpeg';
 
 function AboutUs() {
     return (
@@ -12,39 +10,37 @@ function AboutUs() {
             <Navbar />
 
             {/* Hero Section */}
-         {/* Hero Section */}
-<div className="relative text-navy py-16 bg-cover bg-center bg-no-repeat" 
-    style={{ backgroundImage: `url(${heroimage3})` }}>
-    <div className="max-w-screen-xl mx-auto text-center px-6 py-16 rounded-lg">
-        <h2 className="font-heading text-4xl font-extrabold mb-6 text-white">
-            <span className="bg-clip-text text-transparent bg-white  animate-fade-left"
-                style={{ animationDelay: "400ms" }}>
-                {`Imagine. `}
-            </span>
-            
-            <span className="bg-clip-text text-transparent bg-white animate-fade-left"
-                style={{ animationDelay: "800ms" }}>
-                {`Excel. `}
-            </span>
-            <span className="bg-clip-text text-transparent bg-white animate-fade-left"
-                style={{ animationDelay: "1200ms" }}>
-                {`Inspire`}
-            </span>
-        </h2>
-        <p data-aos="zoom-in"
-            className="font-body text-xl font-bold max-w-3xl mx-auto opacity-0 animate-fade-in text-white"
-            style={{ animationDelay: "800ms" }}>
-            Igniting Creativity Pursuing Brilliance , and Shaping Future Innovators 
-        </p>
-    </div>
-</div>
-
+            <div className="relative w-full text-navy py-16 bg-cover bg-center bg-no-repeat overflow-hidden" 
+                style={{ backgroundImage: `url(${heroimage3})` }}>
+                <div className="max-w-[1280px] mx-auto text-center px-6 py-16 rounded-lg">
+                    <h2 className="font-body text-5xl font-extrabold mb-6 text-white">
+                        <span className="bg-clip-text text-transparent animate-fade-left bg-gradient-to-r from-gray-400 to-white hover:from-white hover:to-gray-400"
+                            style={{ animationDelay: "400ms" }}>
+                            {`Imagine `}
+                        </span>
+                        <span className="bg-clip-text text-transparent bg-white animate-fade-left bg-gradient-to-r from-gray-400 to-white hover:from-white hover:to-gray-400"
+                            style={{ animationDelay: "800ms" }}>
+                            {`Excel `}
+                        </span>
+                        <span className="bg-clip-text text-transparent bg-white animate-fade-left bg-gradient-to-r from-gray-400 to-white hover:from-white hover:to-gray-400"
+                            style={{ animationDelay: "1200ms" }}>
+                            {`Inspire`}
+                        </span>
+                    </h2>
+                    <p data-aos="zoom-in"
+                        className="font-body text-xl font-bold max-w-3xl mx-auto opacity-0 animate-fade-in text-white"
+                        style={{ animationDelay: "800ms" }}>
+                        Igniting Creativity, Pursuing Brilliance, and Shaping Future Innovators 
+                    </p>
+                </div>
+            </div>
 
             {/* Content Section */}
-            <div data-aos="fade-up" className="bg-blue-50 px-6 py-12 shadow-lg rounded-lg">
-                <div className="max-w-screen-xl mx-auto space-y-16">
+            <div data-aos="fade-up" className="bg-blue-50 px-6 py-12 shadow-lg rounded-lg w-full overflow-hidden">
+                <div className="max-w-[1280px] mx-auto space-y-16">
+                    
                     {/* Vision Section */}
-                    <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-8 hover:shadow-xl transition-transform transform hover:scale-105 bg-gradient-to-r from-blue-50 to-aqua-300">
+                    <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-8 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02] overflow-hidden">
                         <div className="lg:w-1/2">
                             <img src={vision} alt="Vision" className="w-full h-auto object-cover rounded-xl shadow-md" />
                         </div>
@@ -57,7 +53,7 @@ function AboutUs() {
                     </div>
 
                     {/* Mission Section */}
-                    <div data-aos="fade-up" className="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl p-8 hover:shadow-xl transition-transform transform hover:scale-105 bg-gradient-to-r from-aqua-400 to-blue-300">
+                    <div data-aos="fade-up" className="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl p-8 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02] overflow-hidden">
                         <div className="lg:w-1/2">
                             <img src={mission} alt="Mission" className="w-full h-auto object-cover rounded-xl shadow-md" />
                         </div>
@@ -72,29 +68,23 @@ function AboutUs() {
             </div>
 
             {/* Call to Action */}
-            <div data-aos="fade-left" className="bg-navy py-8">
-    <div className="max-w-screen-xl mx-auto text-center px-6">
-        <h2 className="font-heading text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 mb-6 shadow-md transition-all duration-500 hover:scale-105 hover:from-purple-500 hover:to-blue-400">
-            {/* Embark on Excellence Together */}
-            Shape Tomorrow with Us
-        </h2>
-        <p className="font-body text-lg text-gray-300 max-w-2xl mx-auto mb-6 shadow-sm transition-all duration-500 hover:scale-105 hover:text-white hover:bg-clip-text hover:bg-gradient-to-r from-blue-300 to-purple-400">
-            {/* Join hands with us to redefine the future of education and skill development worldwide. */}
-
-            Together , we can Revolutionize Global Education
-        </p>
-        <a
-            href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
-            target="_blank"
-            rel="noopener noreferrer"
-        >                    
-            <button className="font-body bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-500 hover:from-purple-600 hover:to-blue-500 hover:shadow-xl">
-                Contact Us
-            </button>
-        </a>    
-    </div>
-</div>
-
+            <div className="bg-navy py-8 w-full overflow-hidden">
+                <div className="max-w-[1280px] mx-auto text-center px-6">
+                    <h2 className="font-heading text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 mb-6 shadow-md">
+                        Shape Tomorrow with Us
+                    </h2>
+                    <p className="font-body text-lg text-gray-300 max-w-2xl mx-auto mb-6 shadow-sm">
+                        Together, we can Revolutionize Global Education
+                    </p>
+                    <a href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <button className="max-w-full font-body bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-blue-500 hover:shadow-xl">
+                            Contact Us
+                        </button>
+                    </a>    
+                </div>
+            </div>
 
             <Footer1 />
         </>

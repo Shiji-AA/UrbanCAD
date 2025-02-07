@@ -5,9 +5,9 @@ import ContactForm from '../../Components/Users/ContactForm/ContactForm'
 import EnquiryDiv from '../../Components/Users/EnquiryDiv/EnquiryDiv';
 import Footer1 from '../../Components/Users/Footer/Footer1'
 import OurPrograms from '../../Components/Users/OurPrograms/OurPrograms'
+import Benefits from '../../Components/Users/Benefits/Benefits'
 import Home from '../../Components/Users/Home/Home'
 import Navbar from '../../Components/Users/Navbar/Navbar'
-import RulesRegulation from '../../Components/Users/RulesRegulation/RulesRegulation'
 import OurGoals from '../../Components/Users/AboutUs/OurGoals';
 
 
@@ -16,11 +16,11 @@ function HomePage() {
         <div>
             <Navbar/>
             <Home/> 
-            <OurGoals/>      
-            <ContactForm/>       
+            <OurGoals/>   
             <OurPrograms/>
-            <EnquiryDiv bgColor="bg-gray-200" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
-            <RulesRegulation/>
+            <ContactForm/>  
+            <EnquiryDiv bgColor="bg-purple-300" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
+            <Benefits/>
             <Accreditations/>
             <EnquiryDiv bgColor="bg-navy" textColor="text-white" buttonBgColor="bg-aqua" buttonTextColor="text-navy" buttonHoverBgColor="hover:bg-yellow-500" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />
             <Footer1/>              

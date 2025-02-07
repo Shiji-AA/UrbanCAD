@@ -5,11 +5,11 @@ function OurPrograms() {
   const [expandedCategories, setExpandedCategories] = useState([]);
 
   const toggleCategory = (index) => {
-    if (expandedCategories.includes(index)) {
-      setExpandedCategories(expandedCategories.filter(item => item !== index));
-    } else {
-      setExpandedCategories([...expandedCategories, index]);
-    }
+    setExpandedCategories((prev) =>
+      prev.includes(index)
+        ? prev.filter((item) => item !== index)
+        : [...prev, index]
+    );
   };
 
   const categories = [
@@ -32,7 +32,7 @@ function OurPrograms() {
     {
       title: 'Information Technology',
       programs: [
-        'Data Science and ML Masterclass with Python', 'Certificate Program in Generative AI', 'Certificate Course on Cyber Security Analytics','Certificate Course on Software Testing'
+        'Data Science and ML Masterclass with Python', 'Certificate Program in Generative AI', 'Certificate Course on Cyber Security Analytics', 'Certificate Course on Software Testing'
       ]
     },
     {
@@ -44,7 +44,7 @@ function OurPrograms() {
   ];
 
   return (
-    <div data-aos="fade-up"
+    <div
       className="bg-gray-50 py-12 px-6"
       style={{
         backgroundImage: `url(${bluegray3})`,
@@ -55,56 +55,51 @@ function OurPrograms() {
       <div className="max-w-6xl mx-auto bg-white bg-opacity-70 pt-4 pb-4 pl-8 pr-8 rounded-lg">
         {/* Heading */}
         <div className="font-heading text-center mb-12">
-        <div className="font-heading text-center mb-12">
           <h1 className="text-4xl font-bold text-navy mb-2">Explore</h1>
           <h2 className="text-4xl font-bold text-aqua">Our Programs</h2>
-        </div> 
-</div>
-
+        </div>
 
         {/* Full-Width Accordion */}
-        <div data-aos="fade-left"
-        className="space-y-4">
+        <div className="space-y-4">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden hover:bg-white hover:text-white transition-all duration-300"
+              className="bg-white border border-gray-400 shadow-lg rounded-lg overflow-hidden transition-all duration-300"
             >
               {/* Card Header */}
               <div
                 className="bg-gray-300 p-5 cursor-pointer flex justify-between items-center hover:bg-navy hover:text-white"
                 onClick={() => toggleCategory(index)}
               >
-                <h2 className="font-heading text-xl font-semibold flex-1">{category.title}</h2>
-                <span className=" font-bold text-3xl border border-gray-900 w-6 h-6 rounded-full pb-2 flex items-center justify-center">
+                <h2 className="font-heading text-xl font-semibold flex-1">
+                  {category.title}
+                </h2>
+                <span className="font-bold text-3xl border border-gray-900 w-6 h-6 rounded-full pb-2 flex items-center justify-center">
                   {expandedCategories.includes(index) ? '-' : '+'}
                 </span>
               </div>
 
-              
-
               {/* Programs List (Collapsible) */}
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedCategories.includes(index) ? 'h-auto' : 'h-0'}`}
-                style={{
-                  transitionProperty: 'height',
-                }}
+                className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+                  expandedCategories.includes(index)
+                    ? 'max-h-screen'
+                    : 'max-h-0'
+                }`}
               >
-                {expandedCategories.includes(index) && (
-                  <div className="p-5">
-                    <ul className="space-y-3">
-                      {category.programs.map((program, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-center text-gray-800 text-sm hover:text-teal-500   transition-all duration-200"
-                        >
-                          <span className="text-teal-400 mr-2">▶</span>
-                          {program}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div className="p-5">
+                  <ul className="space-y-3">
+                    {category.programs.map((program, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center text-gray-800 text-sm hover:text-teal-500 transition-all duration-200"
+                      >
+                        <span className="text-teal-400 mr-2">▶</span>
+                        {program}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           ))}
