@@ -28,37 +28,37 @@ function OurGoals() {
           className="absolute bottom-0 right-0 sm:bottom-4 sm:right-6 w-[120px] h-[120px] sm:w-[170px] sm:h-[170px] md:w-[220px] md:h-[220px] border-8 border-white rounded-full object-cover"
         />
       </div>
+{/* Right Column: Text Content */}
+<div className="w-full md:w-1/2 flex flex-col justify-center px-2 md:px-4 md:pl-20 pt-5">
+  <h2 className="font-body text-3xl font-bold text-aqua mb-4">
+    Educational Empowerment
+  </h2>
+  <ul className="font-heading list-disc ml-5 text-gray-800 text-lg mb-8">
+    <li>Breaking barriers to skill acquisition</li>
+    <hr />
+    <li>Providing accessible, affordable learning paths</li>
+    <hr />
+    <li>Bridging industry skill gaps</li>
+    <hr />
+    <li>Democratizing professional development</li>
+    <hr />
+  </ul>
 
-      {/* Right Column: Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:pl-20">
-        <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
-          Educational Empowerment
-        </h2>
-        <ul className="font-body list-disc ml-5 text-gray-800 text-lg mb-8">
-          <li>Breaking barriers to skill acquisition</li>
-          <hr />
-          <li>Providing accessible, affordable learning paths</li>
-          <hr />
-          <li>Bridging industry skill gaps</li>
-          <hr />
-          <li>Democratizing professional development</li>
-          <hr />
-        </ul>
+  <h2 className="font-body text-3xl font-bold text-aqua mb-4">
+    Entrepreneurial Enablement
+  </h2>
+  <ul className="font-heading list-disc ml-5 text-gray-800 text-lg">
+    <li>Low-investment franchise model</li>
+    <hr />
+    <li>Turnkey business opportunity</li>
+    <hr />
+    <li>Support for aspiring education entrepreneurs</li>
+    <hr />
+    <li>Pathway to create meaningful local impact</li>
+    <hr />
+  </ul>
+</div>
 
-        <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
-          Entrepreneurial Enablement
-        </h2>
-        <ul className="font-body list-disc ml-5 text-gray-800 text-lg">
-          <li>Low-investment franchise model</li>
-          <hr />
-          <li>Turnkey business opportunity</li>
-          <hr />
-          <li>Support for aspiring education entrepreneurs</li>
-          <hr />
-          <li>Pathway to create meaningful local impact</li>
-          <hr />
-        </ul>
-      </div>
     </div>
   );
 }

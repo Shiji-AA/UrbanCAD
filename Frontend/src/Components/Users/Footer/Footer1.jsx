@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import footerbg from "../../../assets/certificates/footerbg1.avif";
-import arciteLogo from '../../../assets/certificates/ARCITEBLACK.png'
+import arciteLogo from '../../../assets/certificates/ARCITEBLACK1.png'
 import {
   faFacebookF,
   faInstagram,
@@ -26,42 +26,43 @@ function Footer1() {
 
   return (
     <footer
-      className="bg-white text-gray-900"
+      className="bg-white text-gray-900 pt-3 "
       style={{
         backgroundImage: `url(${footerbg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="mx-auto w-full max-w-screen-xl lg:py-6 px-6">
+ <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:py-6">
         {/* Footer Content */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Left Section */}
-          <div className="flex-1">
+          <div className="flex-1 p">  
             <Link to="" className="flex items-center">
               <img src={logoArcite2} className="h-16 mr-3" alt="ARCITE" />
             </Link>
-            <p className="text-lg mt-6 text-gray-800 leading-relaxed">
-            Urban CAD is designed to bring specialized software training to students across the globe. 
-            It aims to establish a network of training centres, bridging geographical gaps and 
-            empowering students to acquire industry-relevant skills, no matter where they are.
-            </p>
+            <p className="text-lg mt-6 text-gray-800 leading-relaxed max-w-[700px] sm:max-w-[800px] mx-auto sm:mx-0">
+  Urban CAD is designed to bring specialized software training to students across the globe. 
+  It aims to establish a network of training centres, bridging geographical gaps and 
+  empowering students to acquire industry-relevant skills, no matter where they are.
+</p>
+
           </div>
 
           {/* Right Section - Social Links & Contact */}
-          <div className="flex-1 grid grid-cols-2 gap-6">
+          <div className="flex-1 grid grid-cols-2 gap-1">
             {/* Social Links */}
             <div>
-              <h2 className="font-heading mb-4 text-xl font-semibold text-navy">
+              <h2 className="font-body mb-4 text-xl font-semibold text-navy">
                 Follow Us
               </h2>
               <ul className="space-y-3">
                 {[
                   { href: "https://www.facebook.com/arciteschooloftechnicaleducation/", icon: faFacebookF, label: "Facebook" },
-                  { href: "https://www.instagram.com/arcite.in/", icon: faInstagram, label: "Instagram" },
-                  { href: "https://www.youtube.com/@arciteschooloftechnicaledu6571", icon: faYoutube, label: "YouTube" },
-                  { href: "https://x.com/arcite_in", icon: faXTwitter, label: "Twitter" },
+                  { href: "https://www.instagram.com/arcite.in/", icon: faInstagram, label: "Instagram" },                 
+                  { href: "https://x.com/arcite_in", icon: faXTwitter, label: "Twitter" },                  
                   { href: "https://www.linkedin.com/company/arc-institute-of-technical-education/", icon: faLinkedin, label: "LinkedIn" },
+                  { href: "https://www.youtube.com/@arciteschooloftechnicaledu6571", icon: faYoutube, label: "YouTube" },
                 ].map(({ href, icon, label }) => (
                   <li key={label}>
                     <a
@@ -84,7 +85,7 @@ function Footer1() {
 
             {/* Contact Info */}
             <div>
-              <h2 className="font-heading mb-4 text-xl font-semibold text-navy">
+              <h2 className="font-body mb-4 text-xl font-semibold text-navy">
                 Contact Us
               </h2>
               <ul className="space-y-3">
@@ -110,7 +111,8 @@ function Footer1() {
   <a href="#">
     An{" "}
     <a href="https://www.arcite.in/" className="text-aqua" style={{ display: 'inline-flex', alignItems: 'center' }}>
-      <img src={arciteLogo} alt="Arcite Logo" style={{ width: 60, height: 20, marginLeft: 4, marginRight: 4 }} />
+      {/* <img src={arciteLogo} alt="Arcite Logo" style={{ width: 60, height: 20, marginLeft: 4, marginRight: 4 }} /> */}
+      <img src={arciteLogo} alt="Arcite Logo" style={{ width: 20, height: 20, marginLeft: 4, marginRight: 4 }} />
     </a>{" "}
     Initiative
   </a>

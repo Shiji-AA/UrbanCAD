@@ -54,10 +54,11 @@ function OurPrograms() {
     >
       <div className="max-w-6xl mx-auto bg-white bg-opacity-70 pt-4 pb-4 pl-8 pr-8 rounded-lg">
         {/* Heading */}
-        <div className="font-heading text-center mb-12">
-          <h1 className="text-4xl font-bold text-navy mb-2">Explore</h1>
-          <h2 className="text-4xl font-bold text-aqua">Our Programs</h2>
-        </div>
+        <div className="font-body text-center mb-12">
+  <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-2">Explore</h1>
+  <h2 className="text-3xl sm:text-4xl font-bold text-aqua">Our Programs</h2>
+</div>
+
 
         {/* Full-Width Accordion */}
         <div className="space-y-4">

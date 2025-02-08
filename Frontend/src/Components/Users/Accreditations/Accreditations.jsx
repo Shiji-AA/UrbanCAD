@@ -6,7 +6,7 @@ import '../../../index.css'
 function Accreditations() {
   return (
     <div data-aos="fade-up"
-      className="font-heading bg-gradient-to-r from-red-100 via-gray-100 to-gray-200 p-10 md:p-16 text-white  flex flex-col justify-center items-center"
+      className="bg-gradient-to-r from-red-100 via-gray-100 to-gray-200 p-10 md:p-16 text-white  flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${lightpink})`,
         backgroundSize: 'cover',
@@ -14,8 +14,8 @@ function Accreditations() {
         backgroundPosition: 'center',
       }}
     >
-      <h3 className="text-lg md:text-2xl font-semibold mb-4 text-aqua">YOUR TRUSTED SOURCE FOR EDUCATION</h3>
-      <h1 className="text-navy text-2xl md:text-5xl font-bold mb-8 p-3">
+      <h3 className=" font-heading text-lg md:text-2xl font-semibold mb-4 text-aqua">YOUR TRUSTED SOURCE FOR EDUCATION</h3>
+      <h1 className="font-body text-navy text-2xl md:text-5xl font-bold mb-8 p-3">
         Authorized Training From <span className="text-aqua">Industry Leaders</span>
       </h1>
 

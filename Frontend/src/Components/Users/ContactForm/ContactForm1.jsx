@@ -68,7 +68,7 @@ function ContactForm1() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="font-heading max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-center items-center">
+      <div className="font-body max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-center items-center">
         <div className="text-center md:text-center md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold text-navy mb-4 leading-tight">
             Revolutionize <span className='text-aqua pl-3'>Education</span> 

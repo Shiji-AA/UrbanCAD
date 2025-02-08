@@ -45,8 +45,8 @@ function AboutUs() {
                             <img src={vision} alt="Vision" className="w-full h-auto object-cover rounded-xl shadow-md" />
                         </div>
                         <div className="lg:w-1/2 lg:pl-12 mt-6 lg:mt-0 text-center lg:text-left">
-                            <h3 className="font-heading text-4xl font-semibold text-navy mb-4">Our Vision</h3>
-                            <p className="font-body text-aqua text-lg leading-relaxed">
+                            <h3 className="font-body text-4xl font-semibold text-navy mb-4">Our Vision</h3>
+                            <p className="font-heading text-aqua text-lg leading-relaxed">
                                 “To be the driving force behind accessible, affordable, and impactful education and skill development, shaping a brighter future for individuals worldwide.”
                             </p>
                         </div>
@@ -58,8 +58,8 @@ function AboutUs() {
                             <img src={mission} alt="Mission" className="w-full h-auto object-cover rounded-xl shadow-md" />
                         </div>
                         <div className="lg:w-1/2 lg:pr-12 mt-6 lg:mt-0 text-center lg:text-left">
-                            <h3 className="font-heading text-4xl font-semibold text-aqua mb-4">Our Mission</h3>
-                            <p className="font-body text-navy text-lg leading-relaxed">
+                            <h3 className="font-body text-4xl font-semibold text-aqua mb-4">Our Mission</h3>
+                            <p className="font-heading text-navy text-lg leading-relaxed">
                                 “To empower individuals globally through a strong network of franchises, offering accessible and top-tier education and skill-building opportunities that drive lifelong success.”
                             </p>
                         </div>
@@ -70,16 +70,16 @@ function AboutUs() {
             {/* Call to Action */}
             <div className="bg-navy py-8 w-full overflow-hidden">
                 <div className="max-w-[1280px] mx-auto text-center px-6">
-                    <h2 className="font-heading text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 mb-6 shadow-md">
+                    <h2 className="font-body text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 mb-6 shadow-md">
                         Shape Tomorrow with Us
                     </h2>
-                    <p className="font-body text-lg text-gray-300 max-w-2xl mx-auto mb-6 shadow-sm">
+                    <p className="font-heading text-lg text-gray-300 max-w-2xl mx-auto mb-6 shadow-sm">
                         Together, we can Revolutionize Global Education
                     </p>
                     <a href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="max-w-full font-body bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-blue-500 hover:shadow-xl">
+                        <button className="max-w-full font-heading bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-blue-500 hover:shadow-xl">
                             Contact Us
                         </button>
                     </a>    

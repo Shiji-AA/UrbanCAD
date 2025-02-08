@@ -8,7 +8,7 @@ function Benefits() {
       
       {/* First half with heading and paragraph */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-16 px-8 bg-gray-200 relative">
-      <h1 className="pb-10 font-heading text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-navy to-aqua bg-clip-text transition-all duration-500 mb-4 hover: transform  ease-in-out hover:scale-105">
+      <h1 className="pb-10 font-body text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-navy to-aqua bg-clip-text transition-all duration-500 mb-4 hover: transform  ease-in-out hover:scale-105">
   Partner with us for Unparalleled Growth
 </h1>
 

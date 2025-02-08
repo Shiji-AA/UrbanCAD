@@ -94,16 +94,17 @@ style={{
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
 }}>
-  <div className="max-w-screen-2xl mx-auto flex justify-center items-center space-x-4 flex-wrap">
+  <div className=" font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-4 flex-wrap">
     {/* First part - Heading */}
-    <div className="w-full sm:w-1/3 text-center mb-8 sm:mb-0">
-      <h1 className="text-4xl font-bold text-navy mb-4 leading-tight">
-        Revolutionize <span className="text-aqua pl-3">Education</span>
-      </h1>
-      <h2 className="text-2xl font-bold text-navy mb-4">
-        Start your journey with UrbanCAD!
-      </h2>
-    </div>
+    <div className="w-full sm:w-1/3 text-center mb-6 sm:mb-0">
+  <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-3 sm:mb-4 leading-snug sm:leading-tight">
+    Revolutionize <span className="text-aqua pl-1 sm:pl-3">Education</span>
+  </h1>
+  <h2 className="text-xl sm:text-2xl font-bold text-navy mb-3 sm:mb-4">
+    Start your journey with UrbanCAD!
+  </h2>
+</div>
+
 
     {/* Second and third parts - Form */}
     <div className="w-full sm:w-2/3 bg-white p-8 shadow-2xl rounded-lg border-2">

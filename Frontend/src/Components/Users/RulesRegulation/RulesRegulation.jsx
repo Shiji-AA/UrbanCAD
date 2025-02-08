@@ -47,13 +47,13 @@ function RulesRegulation() {
       {/* Second Div: Requirements and Support */}
       <div className=" md:w-1/2 ">
         <div className="rounded-lg md:p-12 p-0">
-          <h6 className="font-heading text-xl font-semibold text-aqua mb-4">
+          <h6 className="font-body text-xl font-semibold text-aqua mb-4">
             UNLOCK THE POTENTIAL OF URBANCAD FRANCHISE
           </h6>
-          <h2 className="font-heading text-4xl font-semibold text-navy mb-6">
+          <h2 className="font-body text-4xl font-semibold text-navy mb-6">
             Step into success with an UrbanCAD franchise today
           </h2>
-          <p className="font-body text-gray-600 mb-6 leading-relaxed text-lg">
+          <p className="font-heading text-gray-600 mb-6 leading-relaxed text-lg">
             Joining the UrbanCAD franchise offers a unique opportunity in a
             growing industry, with proven business models and strong support. As
             a franchisee, you will receive training, marketing, and operational
