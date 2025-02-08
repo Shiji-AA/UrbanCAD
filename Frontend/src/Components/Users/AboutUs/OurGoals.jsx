@@ -1,55 +1,62 @@
-import image1 from '../../../assets/certificates/image25.jpeg';//girls
-import image2 from '../../../assets/certificates/image24.jpeg';//Big image
-import image3 from '../../../assets/certificates/image21.jpeg';
+import image1 from '../../../assets/certificates/image25.jpeg'; // Big Image
+import image2 from '../../../assets/certificates/image24.jpeg'; // Top Right Image
+import image3 from '../../../assets/certificates/image21.jpeg'; // Bottom Right Image
 
 function OurGoals() {
   return (
     <div data-aos="fade-up" className="flex flex-col md:flex-row w-full bg-gray-100 pt-20 pb-20 px-0 overflow-hidden">
       {/* Left Column: Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center relative">
-  {/* Main Image (Big Circle) */}
-  <img
-    src={image2}
-    alt="Educational Empowerment"
-    className="rounded-full shadow-lg w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] border-8 border-white object-cover"
-  />
+        {/* Main Image (Big Circle) */}
+        <img
+          src={image2}
+          alt="Educational Empowerment"
+          className="rounded-full shadow-lg w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] md:w-[550px] md:h-[550px] border-8 border-white object-cover"
+        />
 
-  {/* Top Right Small Image */}
-  <img
-    src={image3}
-    alt="Image 2"
-    className="absolute top-0 right-12 sm:right-6 w-20 h-20 sm:w-28 sm:h-28 md:w-[180px] md:h-[180px] border-8 border-white rounded-full object-cover"
-  />
+        {/* Top Right Small Image (Overlap on Big Image) */}
+        <img
+          src={image1}
+          alt="Image 2"
+          className="absolute -top-5 right-5 sm:right-10 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] border-8 border-white rounded-full object-cover"
+        />
 
-  {/* Bottom Left Small Image */}
-  <img
-    src={image1}
-    alt="Image 3"
-    className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-24 h-24 sm:w-32 sm:h-32 md:w-[250px] md:h-[250px] border-8 border-white rounded-full object-cover"
-  />
-</div>
-
+        {/* Bottom Right Small Image (Overlap on Big Image) */}
+        <img
+          src={image3}
+          alt="Image 3"
+          className="absolute bottom-0 right-0 sm:bottom-4 sm:right-6 w-[120px] h-[120px] sm:w-[170px] sm:h-[170px] md:w-[220px] md:h-[220px] border-8 border-white rounded-full object-cover"
+        />
+      </div>
 
       {/* Right Column: Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 pl-20">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:pl-20">
         <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
           Educational Empowerment
         </h2>
         <ul className="font-body list-disc ml-5 text-gray-800 text-lg mb-8">
-          <li>Breaking barriers to skill acquisition</li><hr/>
-          <li>Providing accessible, affordable learning paths</li><hr/>
-          <li>Bridging industry skill gaps</li><hr/>
-          <li>Democratizing professional development</li><hr/>
+          <li>Breaking barriers to skill acquisition</li>
+          <hr />
+          <li>Providing accessible, affordable learning paths</li>
+          <hr />
+          <li>Bridging industry skill gaps</li>
+          <hr />
+          <li>Democratizing professional development</li>
+          <hr />
         </ul>
 
         <h2 className="font-heading text-3xl font-bold text-aqua mb-4">
           Entrepreneurial Enablement
         </h2>
         <ul className="font-body list-disc ml-5 text-gray-800 text-lg">
-          <li>Low-investment franchise model</li><hr/>
-          <li>Turnkey business opportunity</li><hr/>
-          <li>Support for aspiring education entrepreneurs</li><hr/>
-          <li>Pathway to create meaningful local impact</li><hr/>
+          <li>Low-investment franchise model</li>
+          <hr />
+          <li>Turnkey business opportunity</li>
+          <hr />
+          <li>Support for aspiring education entrepreneurs</li>
+          <hr />
+          <li>Pathway to create meaningful local impact</li>
+          <hr />
         </ul>
       </div>
     </div>
