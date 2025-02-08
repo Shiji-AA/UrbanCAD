@@ -14,14 +14,14 @@ function RulesRegulation() {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="flex flex-wrap w-full p-20 relative">
+    <div data-aos="fade-up" className="flex flex-wrap p-12 relative">
       {/* First Div: Image */}
-      <div className="w-full md:w-1/2 pl-10 mb-8 md:mb-0 relative">
+      <div className="w-full md:w-1/2 mb-8 md:mb-0 relative">
         <img
           data-aos="fade-right"
           src={ani2}
           alt="animation"
-          className="absolute -top-6 left-0 w-34 h-34 animate-bounce"
+          className="absolute -top-1 -left-6 w-34 h-34 animate-bounce"
         />
         <img
           src={image4}
@@ -45,8 +45,8 @@ function RulesRegulation() {
       </div>
 
       {/* Second Div: Requirements and Support */}
-      <div className="w-full md:w-1/2 p-4">
-        <div className="rounded-lg p-6">
+      <div className=" md:w-1/2 ">
+        <div className="rounded-lg p-12">
           <h6 className="font-heading text-xl font-semibold text-aqua mb-4">
             UNLOCK THE POTENTIAL OF URBANCAD FRANCHISE
           </h6>
