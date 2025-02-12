@@ -40,7 +40,7 @@ function RulesRegulation() {
 
       {/* Second Div: Requirements and Support */}
       <div className="w-full md:w-1/2">
-        <div className="rounded-lg md:p-12 p-4">
+        <div className="rounded-lg md:p-12">
           <h6 className="font-body text-xl font-semibold text-aqua mb-4 text-left">
             UNLOCK THE POTENTIAL OF URBANCAD FRANCHISE
           </h6>

@@ -80,7 +80,7 @@ function AboutUs() {
                     <a href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="max-w-full font-heading bg-gradient-to-r from-teal-500 to-purple-400 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-400 hover:to-teal-500 hover:shadow-xl">
+                        <button className="max-w-full font-heading bg-gradient-to-r from-teal-500 to-gray-500 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-gray-500 hover:to-teal-500 hover:shadow-xl">
                             Contact Us
                         </button>
                     </a>    
