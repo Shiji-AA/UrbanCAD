@@ -71,7 +71,7 @@ function AboutUs() {
             {/* Call to Action */}
             <div className="bg-navy py-8 w-full overflow-hidden">
                 <div className="max-w-[1280px] mx-auto text-center px-6">
-                    <h2 className="font-body text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 mb-6 shadow-md">
+                    <h2 className="font-body text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-400 mb-6 shadow-md">
                         Shape Tomorrow with Us
                     </h2>
                     <p className="font-heading text-lg text-gray-300 max-w-2xl mx-auto mb-6 shadow-sm">
@@ -80,7 +80,7 @@ function AboutUs() {
                     <a href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
                         target="_blank"
                         rel="noopener noreferrer">
-                        <button className="max-w-full font-heading bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-blue-500 hover:shadow-xl">
+                        <button className="max-w-full font-heading bg-gradient-to-r from-teal-500 to-purple-400 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 hover:from-purple-400 hover:to-teal-500 hover:shadow-xl">
                             Contact Us
                         </button>
                     </a>    
