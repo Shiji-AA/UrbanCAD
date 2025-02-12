@@ -46,9 +46,9 @@ function AboutUs() {
                         </div>
                         <div className="lg:w-1/2 lg:pl-12 mt-6 lg:mt-0 text-center lg:text-left">
                             <h3 className="font-body text-4xl font-semibold text-navy mb-4">Our Vision</h3>
-                            <p className="font-heading text-aqua text-lg leading-relaxed">
-                                “To be the driving force behind accessible, affordable, and impactful education and skill development, shaping a brighter future for individuals worldwide.”
-                            </p>
+                            <p className="font-heading text-navy text-lg leading-relaxed text-justify w-full sm:max-w-[800px] mx-auto px-4 sm:px-0">
+    “To be the driving force behind accessible, affordable, and impactful education and skill development, shaping a brighter future for individuals worldwide.”
+</p>
                         </div>
                     </div>
 
@@ -59,9 +59,10 @@ function AboutUs() {
                         </div>
                         <div className="lg:w-1/2 lg:pr-12 mt-6 lg:mt-0 text-center lg:text-left">
                             <h3 className="font-body text-4xl font-semibold text-aqua mb-4">Our Mission</h3>
-                            <p className="font-heading text-navy text-lg leading-relaxed">
-                                “To empower individuals globally through a strong network of franchises, offering accessible and top-tier education and skill-building opportunities that drive lifelong success.”
-                            </p>
+                            <p className="font-heading text-navy text-lg leading-relaxed text-justify w-full sm:max-w-[800px] mx-auto px-4 sm:px-0">
+    “To empower individuals globally through a strong network of franchises, offering accessible and top-tier education and skill-building opportunities that drive lifelong success.”
+</p>
+
                         </div>
                     </div>
                 </div>

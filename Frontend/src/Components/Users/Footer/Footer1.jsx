@@ -26,7 +26,7 @@ function Footer1() {
 
   return (
     <footer
-      className="bg-white text-gray-900 pt-3 "
+      className="bg-white text-gray-900 pt-3  border border-gray-100"
       style={{
         backgroundImage: `url(${footerbg})`,
         backgroundSize: "cover",
@@ -41,11 +41,12 @@ function Footer1() {
             <Link to="" className="flex items-center">
               <img src={logoArcite2} className="h-16 mr-3" alt="ARCITE" />
             </Link>
-            <p className="text-lg mt-6 text-gray-800 leading-relaxed max-w-[700px] sm:max-w-[800px] mx-auto sm:mx-0">
+            <p className="text-sm md:text-base mt-6 text-gray-800 leading-relaxed max-w-[700px] sm:max-w-[800px] mx-auto sm:mx-0 text-justify">
   Urban CAD is designed to bring specialized software training to students across the globe. 
   It aims to establish a network of training centres, bridging geographical gaps and 
   empowering students to acquire industry-relevant skills, no matter where they are.
 </p>
+
 
           </div>
 
@@ -111,8 +112,7 @@ function Footer1() {
   <a href="#">
     An{" "}
     <a href="https://www.arcite.in/" className="text-aqua" style={{ display: 'inline-flex', alignItems: 'center' }}>
-      {/* <img src={arciteLogo} alt="Arcite Logo" style={{ width: 60, height: 20, marginLeft: 4, marginRight: 4 }} /> */}
-      <img src={arciteLogo} alt="Arcite Logo" style={{ width: 20, height: 20, marginLeft: 4, marginRight: 4 }} />
+ARCITE
     </a>{" "}
     Initiative
   </a>

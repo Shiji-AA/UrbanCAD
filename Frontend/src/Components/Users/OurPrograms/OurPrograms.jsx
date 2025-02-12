@@ -45,7 +45,7 @@ function OurPrograms() {
 
   return (
     <div
-      className="bg-gray-50 py-12 px-6"
+      className="bg-gray-50 py-12 px-6 border-2 border-gray-50 rounded-lg"
       style={{
         backgroundImage: `url(${bluegray3})`,
         backgroundSize: 'cover',
@@ -55,8 +55,8 @@ function OurPrograms() {
       <div className="max-w-6xl mx-auto bg-white bg-opacity-70 pt-4 pb-4 pl-8 pr-8 rounded-lg">
         {/* Heading */}
         <div className="font-body text-center mb-12">
-  <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-2">Explore</h1>
-  <h2 className="text-3xl sm:text-4xl font-bold text-aqua">Our Programs</h2>
+  <h1 className="text-2xl sm:text-3xl font-bold text-navy mb-2">Explore</h1>
+  <h2 className="text-2xl sm:text-3xl font-bold text-aqua">Our Programs</h2>
 </div>
 
 

@@ -87,17 +87,18 @@ console.log(selectedState)
   return (
   <>
 
-<div data-aos="fade-up" className="py-10 px-4"
+<div data-aos="fade-up" className="py-10 px-4 border border-gray-100"
 style={{
   backgroundImage: `url(${bluegray})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
 }}>
-  <div className=" font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-4 flex-wrap">
+ <div className=" font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-1 flex-wrap ">
+
     {/* First part - Heading */}
-    <div className="w-full sm:w-1/3 text-center mb-6 sm:mb-0">
-  <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-3 sm:mb-4 leading-snug sm:leading-tight">
+    <div className="w-full sm:w-1/2 text-left sm:text-center mb-6 sm:mb-0">
+  <h1 className="text-2xl sm:text-4xl font-bold text-navy mb-3 sm:mb-4 leading-snug sm:leading-tight">
     Revolutionize <span className="text-aqua pl-1 sm:pl-3">Education</span>
   </h1>
   <h2 className="text-xl sm:text-2xl font-bold text-navy mb-3 sm:mb-4">
@@ -106,8 +107,9 @@ style={{
 </div>
 
 
+
     {/* Second and third parts - Form */}
-    <div className="w-full sm:w-2/3 bg-white p-8 shadow-2xl rounded-lg border-2">
+    <div className="w-full sm:w-2/3 bg-white p-5 shadow-2xl rounded-lg border-2 border-cyan-600">
       <form onSubmit={formik.handleSubmit}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Name Field */}
