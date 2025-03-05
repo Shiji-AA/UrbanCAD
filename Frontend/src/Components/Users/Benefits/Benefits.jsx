@@ -7,7 +7,7 @@ function Benefits() {
     <div data-aos="fade-up" className="w-full bg-gray-200 flex flex-wrap md:flex-row px-0 sm:px-4 lg:px-8 border border-gray-50">
       
       {/* First half with heading and paragraph */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-12 px-4 sm:px-8 bg-gray-200 relative">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-6 px-4 sm:px-8 bg-gray-200 relative">
         
         <h1 className="pb-10 font-body text-2xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-navy to-aqua bg-clip-text transition-all duration-500  hover:scale-105">
           Partner with us for Unparalleled Growth
@@ -44,7 +44,7 @@ function Benefits() {
       </div>
 
       {/* Second half with rows of boxes */}
-      <div className="w-full md:w-1/2 flex flex-wrap sm:justify-between justify-start gap-4 py-12 px-4 sm:px-8 bg-gray-200">
+      <div className="w-full md:w-1/2 flex flex-wrap sm:justify-between justify-start gap-4 py-8 px-4 sm:px-8 bg-gray-200">
         
         {/* Box components */}
         {[ 

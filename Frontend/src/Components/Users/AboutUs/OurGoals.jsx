@@ -1,6 +1,6 @@
-import image1 from '../../../assets/certificates/image25.jpeg'; // Big Image
-import image2 from '../../../assets/certificates/image24.jpeg'; // Top Right Image
-import image3 from '../../../assets/certificates/image21.jpeg'; // Bottom Right Image
+import image1 from '../../../assets/certificates/image25.jpeg'; // TOP RIGHT
+import image2 from '../../../assets/certificates/image24.jpg'; // center BIG
+import image3 from '../../../assets/certificates/image21.jpg'; // Bottom Right Image
 
 function OurGoals() {
   return (

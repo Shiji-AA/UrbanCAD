@@ -27,6 +27,7 @@ function App() {
 
   return (
     <Router>
+      <div className="min-h-screen overflow-x-hidden bg-gray-100">
       <Toaster position="top-right" />
       <Routes>
         {/* UserSide */}
@@ -44,6 +45,9 @@ function App() {
         <Route path="/admindashboard" element={<AdminDashboard />} />
         <Route path="/enquirydata" element={<AdminEnquiryData />} />
       </Routes>
+
+      </div>
+     
     </Router>
   );
 }

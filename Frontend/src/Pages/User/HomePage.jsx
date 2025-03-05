@@ -9,13 +9,14 @@ import Benefits from '../../Components/Users/Benefits/Benefits'
 import Home from '../../Components/Users/Home/Home'
 import Navbar from '../../Components/Users/Navbar/Navbar'
 import OurGoals from '../../Components/Users/AboutUs/OurGoals';
+//import Hero from '../../Components/Users/Hero/Hero';
 
 
 function HomePage() {
     return (
         <div>
              <Navbar/>
-             <Home/> 
+             <Home/>              
              <OurGoals/>   
              <OurPrograms/>
              <ContactForm/>  
