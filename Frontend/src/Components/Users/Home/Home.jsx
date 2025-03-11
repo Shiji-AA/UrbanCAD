@@ -56,7 +56,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-black opacity-75"></div>
         {/* Left Section */}
         <div className="flex flex-col items-start justify-start h-full w-full lg:w-[48%] bg-gray-800 bg-opacity-20 p-6 md:p-8 lg:p-12 space-y-6">
           <div className="text-left space-y-4">

@@ -20,7 +20,7 @@ function HomePage() {
              <OurGoals/>   
              <OurPrograms/>
              <ContactForm/>  
-             <EnquiryDiv bgColor="bg-white" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-aqua" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" /> 
+             {/* <EnquiryDiv bgColor="bg-white" textColor="text-navy" buttonBgColor="bg-navy" buttonTextColor="text-white" buttonHoverBgColor="hover:bg-aqua" buttonHoverTextColor="hover:text-white" justifyContent="justify-between" />  */}
              <Benefits/> 
             <Accreditations/>
               <EnquiryDiv bgColor="bg-navy" textColor="text-white" buttonBgColor="bg-aqua" buttonTextColor="text-navy" buttonHoverBgColor="hover:bg-white" buttonHoverTextColor="hover:text-navy" justifyContent="justify-between" />  

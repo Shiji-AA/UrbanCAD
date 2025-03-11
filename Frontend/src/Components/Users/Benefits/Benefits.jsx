@@ -4,10 +4,10 @@ import ani3 from '../../../assets/certificates/ani3.png';
 
 function Benefits() {
   return (
-    <div data-aos="fade-up" className="w-full bg-gray-200 flex flex-wrap md:flex-row px-0 sm:px-4 lg:px-8 border border-gray-50">
+    <div data-aos="fade-up" className="w-full bg-white flex flex-wrap md:flex-row px-0 sm:px-4 lg:px-8 border border-gray-50">
       
       {/* First half with heading and paragraph */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-6 px-4 sm:px-8 bg-gray-200 relative">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-6 px-4 sm:px-8 bg-white relative">
         
         <h1 className="pb-10 font-body text-2xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-navy to-aqua bg-clip-text transition-all duration-500  hover:scale-105">
           Partner with us for Unparalleled Growth
@@ -44,7 +44,7 @@ function Benefits() {
       </div>
 
       {/* Second half with rows of boxes */}
-      <div className="w-full md:w-1/2 flex flex-wrap sm:justify-between justify-start gap-4 py-8 px-4 sm:px-8 bg-gray-200">
+      <div className="w-full md:w-1/2 flex flex-wrap sm:justify-between justify-start gap-4 py-8 px-4 sm:px-8 bg-white">
         
         {/* Box components */}
         {[ 
@@ -55,7 +55,7 @@ function Benefits() {
         ].map((box, index) => (
           <div
             key={index}
-            className={`relative bg-white p-6 md:p-8 rounded-lg shadow-lg text-left group hover:bg-navy transition-all duration-300 ease-in-out w-full sm:w-[48%] transform ${index % 2 === 0 ? "-rotate-2" : "rotate-2"} hover:rotate-0`}
+            className={`relative bg-white p-6 md:p-8 rounded-lg shadow-2xl text-left group hover:bg-navy transition-all duration-300 ease-in-out w-full sm:w-[48%] transform ${index % 2 === 0 ? "-rotate-2" : "rotate-2"} hover:rotate-0`}
           >
             <FontAwesomeIcon icon={box.icon} size="3x" className="text-aqua mb-4" />
             <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-pink-500 transition-all duration-300 ease-in-out">

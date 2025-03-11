@@ -69,7 +69,7 @@ function OurPrograms() {
             >
               {/* Card Header */}
               <div
-                className="bg-gray-300 p-5 cursor-pointer flex justify-between items-center hover:bg-navy hover:text-white"
+                className="bg-white p-5 cursor-pointer flex justify-between items-center hover:bg-navy hover:text-white"
                 onClick={() => toggleCategory(index)}
               >
                 <h2 className="font-heading text-xl font-semibold flex-1">

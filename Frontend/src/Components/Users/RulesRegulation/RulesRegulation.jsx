@@ -68,7 +68,7 @@ function RulesRegulation() {
                 key={index}
                 className="flex items-start space-x-4 border-b border-gray-300 pb-3 md:pb-4"
               >
-                <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-aqua flex-shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full  flex-shrink-0">
                   <FaCheckCircle className="text-navy text-2xl md:text-4xl" />
                 </div>
                 <h2 className="font-body font-bold text-base md:text-lg text-gray-800 text-justify">

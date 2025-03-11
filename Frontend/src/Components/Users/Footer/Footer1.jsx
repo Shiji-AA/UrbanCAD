@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import footerbg from "../../../assets/certificates/footerbg1.avif";
-import arciteLogo from '../../../assets/certificates/ARCITEBLACK1.png'
+//import footerbg from "../../../assets/certificates/footerbg1.avif";
+// import arciteLogo from '../../../assets/certificates/ARCITEBLACK1.png'
 import {
   faFacebookF,
   faInstagram,
@@ -28,7 +28,7 @@ function Footer1() {
     <footer
       className="bg-white text-gray-900 pt-3  border border-gray-100"
       style={{
-        backgroundImage: `url(${footerbg})`,
+        backgroundImage: ``,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

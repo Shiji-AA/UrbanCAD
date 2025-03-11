@@ -87,21 +87,22 @@ console.log(selectedState)
   return (
   <>
 
-<div data-aos="fade-up" className="py-10 px-4 border border-gray-100"
+<div data-aos="fade-up" className="py-10 px-4 border bg-black bg-opacity-30 "
+
 style={{
   backgroundImage: `url(${bluegray})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
 }}>
- <div className=" font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-1 flex-wrap ">
+ <div className="  py-10 font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-1 flex-wrap  bg-black bg-opacity-50">
 
     {/* First part - Heading */}
     <div className="w-full sm:w-1/2 text-left sm:text-center mb-6 sm:mb-0">
-  <h1 className="text-2xl sm:text-4xl font-bold text-navy mb-3 sm:mb-4 leading-snug sm:leading-tight">
+  <h1 className="text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4 leading-snug sm:leading-tight">
     Revolutionize <span className="text-aqua pl-1 sm:pl-3">Education</span>
   </h1>
-  <h2 className="text-xl sm:text-2xl font-bold text-navy mb-3 sm:mb-4">
+  <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
     Start your journey with UrbanCAD!
   </h2>
 </div>
@@ -109,70 +110,70 @@ style={{
 
 
     {/* Second and third parts - Form */}
-    <div className="w-full sm:w-2/3 bg-white p-5 shadow-2xl rounded-lg border-2 border-cyan-600">
+    <div className="w-full sm:w-2/3  p-5 shadow-2xl rounded-lg  ">
       <form onSubmit={formik.handleSubmit}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           {/* Name Field */}
           <div className="w-full mb-4">
-            <label className="font-bold text-gray-800 text-sm leading-8 uppercase">
-              <span className="text-red-400 mr-1">*</span> Name
+            <label className="font-bold text-white text-sm leading-8 uppercase">
+              <span className="text-aqua mr-1">*</span> Name
             </label>
             <input
               name="name"
               placeholder="Enter your name"
-              className="p-3 w-full border-2 rounded-lg text-gray-800 shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="p-3 w-full border-2 rounded-lg text-white shadow-lg bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400 "
               value={formik.values.name}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
             {formik.touched.name && formik.errors.name && (
-              <div className="text-red-600 text-sm mt-1">{formik.errors.name}</div>
+              <div className="text-aqua text-sm mt-1">{formik.errors.name}</div>
             )}
           </div>
 
           {/* Phone Field */}
           <div className="w-full mb-4">
-            <label className="font-bold text-gray-800 text-sm leading-8 uppercase">
-              <span className="text-red-400 mr-1">*</span> Phone
+            <label className="font-bold text-white text-sm leading-8 uppercase">
+              <span className="text-aqua mr-1">*</span> Phone
             </label>
             <input
               name="phone"
               placeholder="Enter your phone number"
-              className="p-3 w-full border-2 rounded-lg text-gray-800 shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="p-3 w-full border-2 rounded-lg text-white shadow-lg bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400"
               value={formik.values.phone}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
             {formik.touched.phone && formik.errors.phone && (
-              <div className="text-red-600 text-sm mt-1">{formik.errors.phone}</div>
+              <div className="text-aqua text-sm mt-1">{formik.errors.phone}</div>
             )}
           </div>
 
           {/* Email Field */}
           <div className="w-full mb-4">
-            <label className="font-bold text-gray-800 text-sm leading-8 uppercase">
-              <span className="text-red-400 mr-1">*</span> Email
+            <label className="font-bold text-white text-sm leading-8 uppercase">
+              <span className="text-aqua mr-1">*</span> Email
             </label>
             <input
               name="email"
               placeholder="Enter your email"
-              className="p-3 w-full border-2 rounded-lg text-gray-800 shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="p-3 w-full border-2 rounded-lg text-white shadow-lg  bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400"
               value={formik.values.email}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
             />
             {formik.touched.email && formik.errors.email && (
-              <div className="text-red-600 text-sm mt-1">{formik.errors.email}</div>
+              <div className="text-aqua text-sm mt-1">{formik.errors.email}</div>
             )}
           </div>
 
 
    {/* State */}
    <div className="w-full mb-4">
-        <label className="font-bold text-gray-800 text-sm uppercase"><span className="text-red-400 mr-1">*</span>State </label>
+        <label className="font-bold text-white text-sm uppercase"><span className="text-aqua mr-1">*</span>State </label>
         <select
           name="state"
-          className="p-3 w-full border-2 rounded-lg text-gray-600 shadow-lg"
+          className="p-3.5 w-full border-2 rounded-lg text-gray-500 shadow-lg  bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400"
           value={formik.values.state}
           onChange={handleStateChange}
         >
@@ -186,10 +187,10 @@ style={{
 
       {/* District */}
       <div className="w-full mb-4">
-        <label className="font-bold text-gray-800 text-sm uppercase"> <span className="text-red-400 mr-1">*</span>District </label>
+        <label className="font-bold text-white text-sm uppercase"> <span className="text-aqua mr-1">*</span>District </label>
         <select
           name="district"
-          className="p-3 w-full border-2 rounded-lg text-gray-600 shadow-lg"
+          className="p-3.5 w-full border-2 rounded-lg text-gray-500 shadow-lg  bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400 "
           value={formik.values.district}
           onChange={formik.handleChange}
         >
@@ -204,16 +205,16 @@ style={{
 
   {/* Location */}
   <div className="w-full mb-4">
-        <label className="font-bold text-gray-800 text-sm uppercase"> <span className="text-red-400 mr-1">*</span> Locality </label>
+        <label className="font-bold text-white text-sm uppercase"> <span className="text-aqua mr-1">*</span> Locality </label>
         <input
           name="location"
           placeholder="Enter your locality"
-          className="p-3 w-full border-2 rounded-lg text-gray-800 shadow-lg"
+          className="p-3 w-full border-2 rounded-lg text-white shadow-lg  bg-transparent focus:outline-none focus:ring-1 focus:ring-teal-400"
           value={formik.values.location}
           onBlur={formik.handleBlur}
           onChange={formik.handleChange}
         />
-        {formik.touched.location && formik.errors.location && <div className="text-red-600 text-sm">{formik.errors.location}</div>}
+        {formik.touched.location && formik.errors.location && <div className="text-aqua text-sm">{formik.errors.location}</div>}
       </div>
 
    
@@ -226,17 +227,20 @@ style={{
           <div className="text-green-700 bg-green-200 text-lg mb-4 p-2 rounded-md">{submitMessage}</div>
         )}
         {submitError && (
-          <div className="text-red-600 text-lg mb-4 p-2 rounded-md bg-red-100">{submitError}</div>
+          <div className="text-aqua text-lg mb-4 p-2 rounded-md bg-aqua-100">{submitError}</div>
         )}
 
 
+  {/* Centering the Submit Button */}
+  <div className="flex justify-center mt-6">
+  <button
+    type="submit"
+    className="w-[400px] items-center py-3 bg-transparent text-white font-bold text-lg rounded-lg shadow-lg border-2 border-white hover:bg-white hover:text-navy focus:ring-2 focus:ring-white transition-all duration-300 transform hover:scale-105"
+  >
+    Submit
+  </button>
+</div>
 
-        <button
-          type="submit"
-          className="w-full py-3 bg-aqua text-white font-bold text-lg rounded-lg shadow-lg hover:bg-navy focus:ring-2 focus:ring-yellow-400 transition-all duration-300 transform hover:scale-105"
-        >
-          Submit
-        </button>
       </form>
     </div>
   </div>

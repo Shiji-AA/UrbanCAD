@@ -3,7 +3,7 @@ import { useState } from "react";
 import urbancadLogo from "../../../assets/URBANCAD_LOGO2.png";
 import squaremenu from "../../../assets/squaremenu1.png";
 import closewindow from "../../../assets/closewindow.png";
-import Toolbar from "./Toolbar";
+// import Toolbar from "./Toolbar";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-    <Toolbar/>
+    {/* <Toolbar/> */}
       <nav className="flex flex-wrap items-center justify-between p-3 bg-white">
         <img src={urbancadLogo} className="" alt="UrbanCAD logo" width="120" />
 
