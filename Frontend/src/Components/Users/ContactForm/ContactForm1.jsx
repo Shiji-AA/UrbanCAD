@@ -60,14 +60,14 @@ function ContactForm1() {
 
   return (
     <>
-      <div data-aos="fade-up" className="py-10 px-2 border border-gray-100 bg-black  bg-opacity-90"
+      <div data-aos="fade-up" className="py-10 border border-gray-100 bg-[#181818] bg-opacity-90"
         style={{
           backgroundImage: `url(${bluegray})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}>
-        <div className="font-body max-w-screen-lg mx-auto flex justify-center items-center space-x-1 flex-wrap">
+        <div className="font-syn max-w-screen-lg mx-auto flex justify-center items-center space-x-1 flex-wrap bg-[#282828] bg-opacity-20">
           {/* Heading Section */}
           <div className="w-full sm:w-1/2 text-left sm:text-center mb-6 sm:mb-0">
             <h1 className="text-2xl sm:text-4xl font-bold text-white mb-3 sm:mb-4 leading-snug sm:leading-tight">

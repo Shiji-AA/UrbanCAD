@@ -41,13 +41,13 @@ function RulesRegulation() {
       {/* Second Div: Requirements and Support */}
       <div className="w-full md:w-1/2">
         <div className="rounded-lg md:p-12">
-          <h6 className="font-body text-xl font-semibold text-aqua mb-4 text-left">
+          <h6 className="font-syn text-xl font-semibold text-aqua mb-4 text-left">
             UNLOCK THE POTENTIAL OF URBANCAD FRANCHISE
           </h6>
-          <h2 className="font-body text-xl md:text-4xl font-semibold text-navy mb-6 text-left">
+          <h2 className="font-syn text-xl md:text-4xl font-semibold text-navy mb-6 text-left">
             Step into success with an UrbanCAD franchise today
           </h2>
-          <p className="font-heading text-gray-600 mb-6 leading-relaxed text-sm md:text-base text-justify">
+          <p className="font-syn text-gray-600 mb-6 leading-relaxed text-sm md:text-base text-justify">
             Joining the UrbanCAD franchise offers a unique opportunity in a
             growing industry, with proven business models and strong support. As
             a franchisee, you will receive training, marketing, and operational
@@ -71,7 +71,7 @@ function RulesRegulation() {
                 <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full  flex-shrink-0">
                   <FaCheckCircle className="text-navy text-2xl md:text-4xl" />
                 </div>
-                <h2 className="font-body font-bold text-base md:text-lg text-gray-800 text-justify">
+                <h2 className="font-syn font-bold text-base md:text-lg text-gray-800 text-justify">
                   {text}
                 </h2>
               </div>

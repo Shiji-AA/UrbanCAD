@@ -87,7 +87,7 @@ console.log(selectedState)
   return (
   <>
 
-<div data-aos="fade-up" className="py-10 px-4 border bg-black bg-opacity-30 "
+<div data-aos="fade-up" className="bg-[#404040] bg-opacity-60 "
 
 style={{
   backgroundImage: `url(${bluegray})`,
@@ -95,7 +95,7 @@ style={{
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
 }}>
- <div className="  py-10 font-body max-w-screen-2xl mx-auto flex justify-center items-center space-x-1 flex-wrap  bg-black bg-opacity-50">
+ <div className="  py-10 font-syn max-w-screen-2xl mx-auto flex justify-center items-center space-x-1 flex-wrap  bg-[#282828] bg-opacity-70">
 
     {/* First part - Heading */}
     <div className="w-full sm:w-1/2 text-left sm:text-center mb-6 sm:mb-0">

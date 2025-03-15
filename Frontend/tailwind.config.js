@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         body: ['Roboto', 'sans-serif'],
         heading: ['Poppins', 'sans-serif'],
+        slab: ['Roboto Slab', 'serif'], 
+        syn: ['Syne', 'sans-serif'], // Add Syne
       },  
       fontWeight: {
         extrabold: 800, 

@@ -9,11 +9,11 @@ function Benefits() {
       {/* First half with heading and paragraph */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-6 px-4 sm:px-8 bg-white relative">
         
-        <h1 className="pb-10 font-body text-2xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-navy to-aqua bg-clip-text transition-all duration-500  hover:scale-105">
+        <h1 className="pb-10 font-syn text-2xl md:text-4xl font-bold text-transparent bg-[#181818] bg-clip-text transition-all duration-500  hover:scale-105">
           Partner with us for Unparalleled Growth
         </h1>
 
-        <p className="font-body text-sm md:text-base text-gray-600 text-left max-w-xl">
+        <p className="font-syn text-sm md:text-base text-gray-600 text-left max-w-xl">
           Unlock your Potential with our Comprehensive Training and Support Programs
           <br /><br />
           <div className="border-l-8 border-pink-600 pl-4">
@@ -27,7 +27,7 @@ function Benefits() {
           href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="font-body border-4 border-transparent mt-14 text-white inline-block px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-teal-500 to-navy text-sm md:text-base lg:text-xl font-medium rounded-lg shadow-lg hover:bg-blue-500 hover:text-white hover:border-4 hover:border-blue-400 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="font-syn border-4 border-transparent mt-14 text-white inline-block px-4 py-2 md:px-6 md:py-3 bg-teal-600 text-sm md:text-base lg:text-xl font-medium  shadow-lg hover:bg-teal-900 hover:text-white hover:border-4 hover:border-teal-400 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
         >
           Enquire Now
         </a>
@@ -55,13 +55,13 @@ function Benefits() {
         ].map((box, index) => (
           <div
             key={index}
-            className={`relative bg-white p-6 md:p-8 rounded-lg shadow-2xl text-left group hover:bg-navy transition-all duration-300 ease-in-out w-full sm:w-[48%] transform ${index % 2 === 0 ? "-rotate-2" : "rotate-2"} hover:rotate-0`}
+            className={`relative bg-white p-6 md:p-8 rounded-lg shadow-2xl text-left group hover:bg-[#303030] transition-all duration-300 ease-in-out w-full sm:w-[48%] transform ${index % 2 === 0 ? "-rotate-2" : "rotate-2"} hover:rotate-0`}
           >
             <FontAwesomeIcon icon={box.icon} size="3x" className="text-aqua mb-4" />
-            <h2 className="font-heading text-lg md:text-xl font-semibold text-navy mb-2 group-hover:text-pink-500 transition-all duration-300 ease-in-out">
+            <h2 className="font-syn text-lg md:text-xl font-semibold text-[#181818] mb-2 group-hover:text-pink-500 transition-all duration-300 ease-in-out">
               {box.title}
             </h2>
-            <p className="font-body text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+            <p className="font-syn text-sm md:text-base text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
               {box.text}
             </p>
           </div>

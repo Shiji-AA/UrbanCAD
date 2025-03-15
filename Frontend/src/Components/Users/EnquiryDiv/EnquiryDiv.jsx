@@ -1,33 +1,46 @@
-function EnquiryDiv({ 
-    bgColor = 'bg-navy', 
-    textColor = 'text-white', 
-    buttonBgColor = 'bg-aqua', 
-    buttonTextColor = 'text-navy', 
-    buttonHoverBgColor = 'hover:bg-yellow-500', 
-    buttonHoverTextColor = 'hover:text-white', 
-    justifyContent = 'justify-between' 
-}) {
-    return (
-        <>
-            <div className="border border-gray-100">
-                <div className={`font-body ${bgColor} ${textColor} py-10 px-4 flex ${justifyContent} items-center`}>
-                    <div>
-                        <h1 className="text-2xl font-semibold">Let's make a Difference?</h1>
-                    </div>
-                    <a
-                        href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button 
-                            className={`${buttonBgColor} ${buttonTextColor} py-1 px-4 sm:py-3 sm:px-6 font-semibold transition-all duration-300 ease-in-out ${buttonHoverBgColor} ${buttonHoverTextColor}`}
-                        > Enquire Now
-                        </button>
-                    </a>
-                </div>    
-            </div>
-        </>
-    );
+import bgImage from "../../../assets/certificates/bgimage.jpg";
+
+function EnquiryDiv() {
+  return (
+    <section
+      className="w-full min-h-[250px] sm:min-h-[250px] md:min-h-[450px] flex items-center justify-center bg-cover bg-center relative p-6 sm:p-8 md:p-10"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Black Overlay with Opacity */}
+      <div className="absolute inset-0 bg-[#162726] opacity-90"></div>
+
+      {/* Content Box */}
+      <div className="w-full relative text-center max-w-3xl p-6 sm:p-8 md:p-10">
+        <h1 className="font-syn text-2xl sm:text-4xl md:text-5xl font-normal text-white leading-tight">
+          Let us make a difference ?
+        </h1>
+
+        {/* Wider <p> tag */}
+        <p className="font-syn font-normal text-white leading-relaxed mt-4 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+          Partner with Urbancad and redefine spaces with innovation, quality,
+          and expertise. Expand your vision, grow your business, and be a part
+          of our trusted network.
+        </p>
+
+        <a
+          href="https://wa.me/919633221153?text=Hi%20there!%20I'm%20interested%20in%20your%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {/* Button */}
+          <div className="mt-6">
+            <button className="font-syn px-4 py-2 md:px-6 sm:py-4 bg-teal-600 text-white text-lg sm:text-xl font-normal hover:bg-teal-700 transition duration-300">
+              Contact Us
+            </button>
+          </div>
+        </a>
+      </div>
+    </section>
+  );
 }
 
 export default EnquiryDiv;

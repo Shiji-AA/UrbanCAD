@@ -30,10 +30,10 @@ function OurGoals() {
       </div>
 {/* Right Column: Text Content */}
 <div className="w-full md:w-1/2 flex flex-col justify-center px-2 md:px-4 md:pl-20 pt-5">
-  <h2 className="font-body text-3xl font-bold text-navy mb-4 hover:text-aqua">
+  <h2 className="font-syn text-3xl font-bold text-navy mb-4 hover:text-aqua">
     Educational Empowerment
   </h2>
-  <ul className="font-heading list-disc ml-5 text-gray-800 text-lg mb-8">
+  <ul className="font-syn list-disc ml-5 text-gray-800 text-lg mb-8">
     <li>Breaking barriers to skill acquisition</li>
     <hr />
     <li>Providing accessible, affordable learning paths</li>
@@ -44,10 +44,10 @@ function OurGoals() {
     <hr />
   </ul>
 
-  <h2 className="font-body text-3xl font-bold text-navy mb-4 hover:text-aqua">
+  <h2 className="font-syn text-3xl font-bold text-navy mb-4 hover:text-aqua">
     Entrepreneurial Enablement
   </h2>
-  <ul className="font-heading list-disc ml-5 text-gray-800 text-lg">
+  <ul className="font-syn list-disc ml-5 text-gray-800 text-lg">
     <li>Low-investment franchise model</li>
     <hr />
     <li>Turnkey business opportunity</li>

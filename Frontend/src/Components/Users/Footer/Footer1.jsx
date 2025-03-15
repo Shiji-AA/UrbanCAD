@@ -54,7 +54,7 @@ function Footer1() {
           <div className="flex-1 grid grid-cols-2 gap-1">
             {/* Social Links */}
             <div>
-              <h2 className="font-body mb-4 text-xl font-semibold text-navy">
+              <h2 className="font-syn mb-4 text-xl font-semibold text-navy">
                 Follow Us
               </h2>
               <ul className="space-y-3">
@@ -86,7 +86,7 @@ function Footer1() {
 
             {/* Contact Info */}
             <div>
-              <h2 className="font-body mb-4 text-xl font-semibold text-navy">
+              <h2 className="font-syn mb-4 text-xl font-semibold text-navy">
                 Contact Us
               </h2>
               <ul className="space-y-3">
@@ -106,12 +106,12 @@ function Footer1() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col md:flex-row sm:justify-between items-center mt-6 pt-4 border-t-2 border-gray-300 text-lg">
+        <div className=" flex flex-col md:flex-row sm:justify-between items-center mt-6 pt-4 border-t-2 border-gray-300 text-lg">
         <span className="text-gray-900 text-center sm:text-left">
   © 2025{" "}
   <a href="#">
     An{" "}
-    <a href="https://www.arcite.in/" className="text-aqua" style={{ display: 'inline-flex', alignItems: 'center' }}>
+    <a href="https://www.arcite.in/" className="font-syn text-aqua" style={{ display: 'inline-flex', alignItems: 'center' }}>
 ARCITE
     </a>{" "}
     Initiative
