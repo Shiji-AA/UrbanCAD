@@ -13,14 +13,13 @@ function EnquiryDiv() {
       {/* Black Overlay with Opacity */}
       <div className="absolute inset-0 bg-[#162726] opacity-90"></div>
 
-      {/* Content Box */}
-      <div className="w-full relative text-center max-w-3xl p-6 sm:p-8 md:p-10">
+      {/* Content Box - Align Left on Mobile, Center on Larger Screens */}
+      <div className="w-full relative max-w-3xl p-6 sm:p-8 md:p-10 text-left sm:text-center flex flex-col items-start sm:items-center">
         <h1 className="font-syn text-2xl sm:text-4xl md:text-5xl font-normal text-white leading-tight">
-          Let us make a difference ?
+          Let us make a difference 
         </h1>
 
-        {/* Wider <p> tag */}
-        <p className="font-syn font-normal text-white leading-relaxed mt-4 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+        <p className="font-syn font-normal text-white leading-relaxed mt-4 text-base sm:text-lg md:text-xl max-w-3xl">
           Partner with Urbancad and redefine spaces with innovation, quality,
           and expertise. Expand your vision, grow your business, and be a part
           of our trusted network.
